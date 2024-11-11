@@ -1,0 +1,37 @@
+**** 
+- All results generated using data w/ #peaks >2k, foldChange10 peaks>500
+- archive, old version using data w/ motif AND SE
+- updated version using data w/ motif, especially for CP vs. AICAP
+
+==
+CP of TFMS vs randomly generated regions as control, which follow the exponential distribution 
+
+CP of TFBS, using TFMS as control
+- to check if TF CP changed compared to TFMS
+- and how is this correlated with enrichment at SE
+
+
+==
+f2_cor_CP_SE_AICAP
+==
+Correlation among
+- TF cluster potential
+- TF enrichment at SEs
+- TF protein AICAP score
+
+
+==
+f3_clustered_TFBS
+==
+merge all TFBS with closest neighbor < percentile-1 in randomly selected TFMS
+check co-occurrence of union binding of TFs with 
+- high TFBS CP and 
+- high z-scored TFBS CP 
+
+
+==
+f4_clustered_TFBS_cor_CTCF
+==
+check the CTCF specificity and CTCF gain potential of  
+- high TFBS CP and 
+- high z-scored TFBS CP 

@@ -1,0 +1,12 @@
+1. for each TCGA cancer type with matched SE data, 
+get the TCGA ATAC peaks that overlap with SE data
+
+
+2. for each ATAC-seq peak, 
+rank patients by ATAC-seq signal and check survival differences
+
+
+3. get those clinical high-cor, SE overlapped ATAC-seq peaks for BART analysis
+4. get all SE overlapped ATAC-seq peaks for BART analysis, ranked by -log(survuval pvalue)
+-- the question would be that for 3&4, too few input regions for BART analysis
+-- the feature should be more correlated with SEs, and the clinical cor-info could not be fully used

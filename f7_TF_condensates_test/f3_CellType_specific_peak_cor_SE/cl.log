@@ -1,0 +1,5 @@
+	 python py3_union_peaks.py  > out_py3.sh 
+	 sh out_py3.sh 
+	 module load gcc/9.2.0
+	 module load bedtools/2.29.2
+	 python py5_cellType_specific_peaks_cor_SE_over_AllPeaks.py  > out_py5.log 

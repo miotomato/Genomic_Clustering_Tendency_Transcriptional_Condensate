@@ -1,0 +1,5 @@
+	 cat *.bed |sort -u > all_hg38_SE.bed
+	 cp /nv/vol190/zanglab/zw5j/since2019_projects/phase_separation_FEpiTR/data/SE_hg38/* .
+	 mv u87.bed U87.bed
+	 mv panc1.bed PANC-1.bed
+	 mv Jurkat.bed T-ALL.bed

@@ -1,0 +1,48 @@
+
+f1_TFBS_enrich_at_SE
+	for each celltype, check the TFBS enrichment at cell type specific SE
+	only use the peak file with the largest number of peaks
+	use the shuffled genome regions, randomly selected UDHS, randomly selected merged TF peaks as control
+	○ for each celltype, check the TFBS enrichment at cell type specific SE
+	○ only use the peak file with the largest number of peaks
+	○ Background control:
+		§ shuffled genome regions, 
+		§ randomly selected UDHS, 
+		§ randomly selected merged TF peaks
+			□ For each factor, merge all peaks from all ChIP-seq data w/ PeaksFoldChangeAbove10 > 200
+			□ For hm with large amount of chip-seq peak files, random select 1000 files to merge peaks
+				H3K27ac 2539
+				H3K27me3 1440
+				H3K4me3 2313
+
+f1_slurm
+	slurm file to run py1_TFBS_enrichAt_SE.py
+	
+f1_slurm_log
+	log file of the filtered chip-seq peak file
+	- cell line with matched SE file, and 
+	- ChIP-seq data w/ PeaksFoldChangeAbove10 > 200
+	
+	
+f2_TFBS_enrichAt_SE_stats
+	statistics of enrichment of TFBS at cell type specific SEs 
+	- relative rank
+	- z-score
+	- pvalue
+	
+f3_enrhch_at_SE_cor_IDR
+f3_enrhch_at_SE_cor_IDR_mergePeak
+	fig for all three background control and for mergePeak only 
+	
+	
+f4_enrich_at_SE_cor_IDR_ttest_sep_by_zscore
+f5_enrich_at_SE_cor_IDR_ttest_sep_by_AICAP
+	Comparison of AICAP score for TFs enriched at SEs (z-score>20) and TFs less enriched at SEs (z-score<5)
+	Comparison of enrichment at SEs (relative rank) for TFs with log2 AICAP < 0 and TFs with log2 AICAP > 0
+
+
+	
+	
+	
+	
+	

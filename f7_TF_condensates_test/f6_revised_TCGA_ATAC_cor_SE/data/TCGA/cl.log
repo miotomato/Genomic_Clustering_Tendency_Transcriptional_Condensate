@@ -1,0 +1,1 @@
+	 cat mynorm_TCGA-ATAC_PanCan_Log2_QuantileNorm_Counts_plus5.caseID.avg.txt |tail -n +2|cut -f 1-6 > tcga_atac.bed 

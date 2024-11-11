@@ -1,0 +1,5 @@
+	 module load gcc/7.1.0
+	 module load bedtools/2.26.0
+	 sbatch run_bedtools_closest_TFMS_jarspar.slurm
+	 sbatch run_bedtools_closest_TFBS.slurm
+	 sbatch run_bedtools_closest_TFBS_with_motif.slurm

@@ -1,0 +1,47 @@
+archive
+	f3 version using only data with motif AND SE
+
+
+f1_TFMS_CP_cor_length_number
+f2_TFMS_CP_cor_SE_heatmap
+	TFMS CP cor motif length/numbers
+	+ TFMS enrichment at SE
+
+
+f3_TFBS_CP_heatmap_with_motif_only
+f3_TFBS_CP_heatmap_with_motif_SE
+	- sep by profiles with both motif + SE, or only motif
+	collect TFBS CP and enrichment at SE
+	heatmap of TFBS CP/SE for
+	- few TFs w/ ChIP-seq data available 
+	- across multiple cell types
+
+
+f5_per_CT_TFBS_CP_cor_SE
+f6_per_TF_TFBS_CP_cor_SE
+	- CP vs. SE, by CT/TF 
+	
+	
+f8_per_CT_cor_AICAP_cor_CP
+	- TFBS CP cor AICAP
+	- box sep by CP score
+f8b_per_CT_cor_AICAP_cor_CP_sep_by_num
+	- merge all cell types in one fig
+	- box sep by percentile
+f8bi_per_CT_cor_AICAP_cor_CP_sep_by_num_all_TFs
+	- use all available TFs, no need >=3 TFs in one cell type
+f8bj_per_CT_cor_AICAP_cor_CP_sep_by_num_all_TFs_negLogAICAP
+	- use all available TFs, no need >=3 TFs in one cell type, no need w/ SE
+	- keep AICAP <1, log AICAP <0
+f8c_per_CT_cor_AICAP_cor_CP_sep_by_num_add_RPB_all_TFs
+	- add RBP info
+	- use all available TFs, no need >=3 TFs in one cell type
+	
+
+f9_per_CT_TFBS_CP_cor_zscore_CP
+	TFBS CP vs. 
+	z-scored TFBS CP
+	
+
+f11_TFBS_CP_cor_peak_nums
+	check if TFBS CP correlated with peak numbers

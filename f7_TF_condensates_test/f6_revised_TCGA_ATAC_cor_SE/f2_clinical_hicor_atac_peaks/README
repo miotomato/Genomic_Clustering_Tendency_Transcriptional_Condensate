@@ -1,0 +1,4 @@
+f1_clinical_at_each_peak
+	for each ATAC-seq peak, sep patients by ATAC-seq signal and check survival diff.
+
+	

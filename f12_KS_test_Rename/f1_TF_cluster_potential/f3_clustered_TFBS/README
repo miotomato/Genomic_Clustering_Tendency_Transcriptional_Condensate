@@ -1,0 +1,25 @@
+f0_TFBS_merge
+	merge all TFBS per factor per celltype
+	
+f1_clustered_TFBS_percentile-5
+	for each ChIP-seq dataset
+	for TFs with high TFBS CP, select TFBS with neighbor < percentile-5 from TFMS
+	and merge those TFBS by percentile-5
+	
+f2_bedfiles_merge
+	merged file from each dataset with high TFBS CP
+	from f1*
+	
+f3_cobinding_TFBS_venn
+	genomic annotation and co-binding of merged TFBS with neighbor < percentile-5
+	
+
+f4_cobinding_TFBS_venn
+	genomic distribution and Venn of shared binding of
+	- clustered TFBS by percentile-5
+	- from Top 3 TFs with largest TFBS CP
+
+
+f5_atac_overlap_coBinding_TFBS
+f6_atac_overlap_coBinding_TFBS_figs
+	clinical analysis of ATAC-seq peaks overlapped with co-binding sites

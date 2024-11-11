@@ -1,0 +1,47 @@
+-- Hypothesis test --
+TF clusters/condensates are associated with SE
+
+
+f1_TF_motif_cluster_cor_SE  
+	-- Motif data
+	Cluster of TFs, use CTCF as an model to define TF cluster
+	Check if TF clusters ~ SE in cancers or ESC
+	any pattern correlations between TF cluster and SE?
+	
+	
+f2_TF_motif_IDR_SE_mutation  
+	-- Motif data
+	Any tools to find/predict IDR from TF sequence/proteins?
+	Check IDR/AICAP score in Tingting Li's paper
+	Find IDR protein and check if IDR protein tend to enriched at SE
+	# Check TCGA data, find mutations at IDR region
+
+	
+f3_CellType_specific_peak_cor_SE
+	-- ChIP-seq peak from Cistrome DB
+	check if the cell type specific TFBS are more enriched at cell type specific SE
+
+f3b_pairwise_CellType_specific_peak_cor_SE
+	for cell type pairs
+	check the cell type specific TFBS cor SE
+
+f4_peak_enrich_at_SE_cor_IDR
+	check the TFBS distribution within a same cell type
+	if TFs enriched at SEs have more potential to have IDR
+	
+f5_TCGA_ATAC_cor_SE
+	check ATAC-seq signal at SE ~ clinical results
+	
+f6_revised_TCGA_ATAC_cor_SE
+	same results as in f5 but to use non-basal BRCA
+	
+	
+
+fx_chromatin_IDR_by_TFBS  
+	Assign IDR to TFBS, use any model to sum the IDR score  
+	if mutation at TF gene affect sequence/chromatin IDR potential
+fx_DL_NLP_on_chromatin_IDR
+	If DL NLP model in NM paper help?
+	
+
+

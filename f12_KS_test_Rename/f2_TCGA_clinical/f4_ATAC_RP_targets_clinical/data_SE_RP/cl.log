@@ -1,0 +1,5 @@
+	 cp /nv/vol190/zanglab/zw5j/since2019_projects/phase_separation_FEpiTR/f8_TF_condensates_V2/f3_clinical_outcome/data/r4_atac_overlap_SE_overlap_TFMS_per_patient_sig.py .
+	 rename _overlap_TFMS_ _ *
+	 cp /nv/vol190/zanglab/zw5j/since2019_projects/phase_separation_FEpiTR/f8_TF_condensates_V2/f3_clinical_outcome/data/get-regulatory-potential-on-genes_peak_level.py .
+	 cp /nv/vol190/zanglab/zw5j/since2019_projects/phase_separation_FEpiTR/f8_TF_condensates_V2/f3_clinical_outcome/data/hg38_unique_geneSymbol.ucsc .
+	 time python r5_gene_RP_by_ATAC_overlap_SE_per_patient.py > out_run5.log 

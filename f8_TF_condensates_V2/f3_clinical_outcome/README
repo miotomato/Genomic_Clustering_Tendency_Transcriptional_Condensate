@@ -1,0 +1,40 @@
+data
+	for each TF motif, 
+	- overlap with SE overlapped ATAC-seq peaks
+	- overlap with all ATAC-seq peaks
+
+	for each gene, get RP calculated from 
+	- ATAC-seq peaks overlapped with SE and motif of per factor
+	- ATAC-seq peaks overlapped with SE and motifs of co-factor
+	
+	
+f1_ATAC_overlap_SE_TFMS_clinical_uni
+	read survival analysis for ATAC-seq peaks that overlap with SE & motif
+	* results from ../../f7_TF_condensates_test/f6_revised_TCGA_ATAC_cor_SE/f3_clinical_hicor_SE_overlapped_peaks/f1_clinical_at_each_peak/f2_caseID_each_SE_vs_clinical
+	get % of peaks with p<0.05 per factor
+
+
+f2_ATAC_overlap_SE_TFMS_clinical_multi
+	survival analysis for ATAC-seq peaks that overlap with SE & motif of
+	- per factor with high CP
+	- co-factors with high CP
+	get % of peaks with p<0.05
+
+f2b_ATAC_overlap_SE_TFMS_clinical_multi
+	bar plot for % of peaks with p<0.05
+
+
+f4_gene_fpkm-uq_clinical_by_TFRP_all
+	survival analysis for each gene by fpkm-uq
+	* results from ../../f7_TF_condensates_test/f6_revised_TCGA_ATAC_cor_SE/f5_clinical_per_gene/f1_clinical_per_gene/
+	for each factor
+	separate genes into groups by RP (e.g., RP>1) from factor-motif-overlapped ATAC-seq peaks
+	get % of genes with p<0.05 
+	
+f4b_gene_fpkm-uq_clinical_by_TFRP_topCP
+	focus on top5 factors with highest CP
+	get targets genes (RP>1) of each factor and co-factors
+	get % of genes with p<0.05 
+	
+	
+	

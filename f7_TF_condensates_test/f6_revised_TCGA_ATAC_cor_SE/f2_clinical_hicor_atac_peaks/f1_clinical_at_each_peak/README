@@ -1,0 +1,5 @@
+
+2. for each of union ATAC-seq peak, 
+rank patients by ATAC-seq signal and check survival differences
+
+4. get all ATAC-seq peaks for BART analysis, ranked by -log(survuval pvalue)

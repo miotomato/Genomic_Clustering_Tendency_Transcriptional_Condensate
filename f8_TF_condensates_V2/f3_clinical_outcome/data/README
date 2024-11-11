@@ -1,0 +1,17 @@
+ATAC_overlap_SE_overlap_TFMS
+ATAC_overlap_TFMS
+	ATAC-seq peaks that 
+	- overlap with both SE and TF motif,
+	- overlap with TF motif 
+
+
+ATAC_overlap_SE_overlap_TFMS_avg_sig
+	ATAC-seq peaks that overlap with both SE and TF motif
+	signals were average across all patients from SE matched cancer
+
+
+ATAC_overlap_SE_overlap_TFMS_avg_sig_RP
+    RP of each gene using
+    ATAC-seq peaks that overlap with both SE and TF motif
+    signals were average across all patients from SE matched cancer
+

@@ -1,0 +1,19 @@
+data
+	public SE data
+
+f1_cluster_enrichment_at_SE
+	use fisher exact test to check 
+	if motifs w/ neighbors <300bp are enriched at SE
+
+f2_fisher_stats_figs
+	plot the heatmap showing the 
+	odds ratio of clustered-motifs vs. all motifs at SEs
+	for all TFs and all 86 human samples
+	
+f2b_fisher_stats_figs_with_ClusterPotential
+	add an extra columns showing the cluster potential 
+
+f3_SE_OR_vs_cluster_potential_figs
+	scatter plot of OR at SE vs. cluster potential
+	
+	

@@ -1,0 +1,11 @@
+	 time python r2_diff_ATAC_each_CancerType.py > out_r2.log
+	 time python r3_atac_overlap_SE.py > out_r3.log 
+	 python r5_read_diff_ATAC_for_BART.py 
+	 for ii in f5_diff_ATAC_bedfile//*.bed;do bart2 region -i $ii -c 5 -s hg38 --outdir f5b_bart_results;done
+	 python bart_scatter_pvalue.py  -i f5b_bart_results -o f5b_bart_figs
+
+	 time python r3b_atac_overlap_union_SE.py  > out_r3b.log
+	 mkdir f6_diff_ATAC_overlap_union_SE_bedfile
+	 for ii in f3b_diff_ATAC_overlap_union_SE/*.bed;do cat $ii|tail -n +2 > f6_diff_ATAC_overlap_union_SE_bedfile/$(basename $ii);done
+	 for ii in f6_diff_ATAC_overlap_union_SE_bedfile/*bed; do bart2 region -i $ii -c 8 -s hg38 --outdir f6b_bart_results;done
+	 python bart_scatter_pvalue.py  -i f6b_bart_results/ -o f6b_bart_figs

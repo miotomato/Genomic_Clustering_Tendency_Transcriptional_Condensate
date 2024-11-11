@@ -1,0 +1,7 @@
+	 cp /nv/vol190/zanglab/zw5j/work2017/T_ALL_CTCF/15_TCGA_patient_data/mutation/panCancer_ICGC/data_new_202002/f2_icgc_mutation_bed_hg38/pancancer_mutation.bed data/
+	 python r1_pancancer_mutation_count_writeSlurm.py 
+	 for ii in f1_pancancer_mutation_count_slurm/*.slurm;do sbatch $ii;done
+	 python r3_pancancer_mutation_ByRate_writeSlurm.py 
+	 for ii in f3_pancancer_mutation_ByRate_slurm/*.slurm;do sbatch $ii;done
+	 python r5_pancancer_mutation_ByRate_on_Motif_Site_writeSlurm.py
+	 for ii in f5_pancancer_mutation_ByRate_on_Motif_Site_slurm/*.slurm;do sbatch $ii;done

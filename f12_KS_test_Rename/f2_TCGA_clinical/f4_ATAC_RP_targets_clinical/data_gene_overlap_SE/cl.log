@@ -1,0 +1,2 @@
+	 bedtools intersect -a hg38_4k_promoter_geneID.bed -b MCF-7.bed -wa -u >> promoter_on_MCF7.bed
+	 python find_overlap_keep_info_NOT_sep_strand.py  -a hg38_4k_promoter_geneID.bed -b MCF-7.bed -e1 10000 -p promoter_on_MCF7.bed -s hg38

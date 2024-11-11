@@ -1,0 +1,14 @@
+
+2. for each cancer type in TCGA, get the differential ATAC-seq score comparing
+- patient samples from corresponding cancer type
+- patient samples from all other cancers
+ATAC-seq score as t-ststistics
+
+3. for each TCGA cancer type with matched SE data, 
+get the TCGA ATAC peaks that overlap and NOT overlap with SE data
+
+4. plot the figs compare diff atac-seq score
+
+5. rank all union ATAC-seq regions by differential score for BART analysis
+
+5. rank all union-SE-overlapped ATAC-seq regions by differential score for BART analysis

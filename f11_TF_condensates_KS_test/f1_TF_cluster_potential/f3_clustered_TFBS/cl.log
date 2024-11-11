@@ -1,0 +1,7 @@
+	 time python run0_TFBS_cp_merge.py > out0.log 
+	 time python run1_clustered_TFBS_merge.py  > out_run1.log
+	 python run2_dataset_merged.py > out2.log 
+	 python run2b_dataset_merged_dataCollect.py 
+	 python run3_coBinding_merge.py> out3.sh
+	 sh out3.sh 
+	 python run5_atac_overlap_coBinding_TFBS.py  > out5.sh

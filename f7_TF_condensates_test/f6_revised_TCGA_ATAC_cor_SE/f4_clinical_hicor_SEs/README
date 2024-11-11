@@ -1,0 +1,8 @@
+data
+	for each SE, get overlapped ATAC-seq peaks and keep info
+
+f1_clinical_at_SE
+	get averaged ATAC-seq signal at each SE
+	- rank patients by averaged ATAC-seq signal at each SE for survival analysis
+	- rank patients by averaged ATAC-seq signal across all SEs for survival analysis
+	

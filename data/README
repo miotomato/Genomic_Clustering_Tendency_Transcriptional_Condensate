@@ -1,0 +1,11 @@
+cistrome_data
+    for each factor, merge all peaks from all cell types
+    use cistrome_db_2019 meta files, which have the name of each peak file
+
+
+py1_cistrome_merged_peaks_append.py
+	For hm with large amount of chip-seq peak files, random select 1000 files for merge peaks
+	H3K27ac 2539
+	H3K27me3 1440
+	H3K4me3 2313
+

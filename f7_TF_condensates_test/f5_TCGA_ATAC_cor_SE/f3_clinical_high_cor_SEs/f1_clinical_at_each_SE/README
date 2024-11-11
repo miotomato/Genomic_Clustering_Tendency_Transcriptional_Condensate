@@ -1,0 +1,10 @@
+-- previous data in ../../f2_TCGA_ATAC_at_SE_cor_survival 
+1. for each TCGA cancer type with matched SE data, 
+get the TCGA ATAC peaks that overlap with SE data
+--
+
+
+2,
+for each ATAC-seq peak,
+rank patients by ATAC-seq signal and check survival differences
+

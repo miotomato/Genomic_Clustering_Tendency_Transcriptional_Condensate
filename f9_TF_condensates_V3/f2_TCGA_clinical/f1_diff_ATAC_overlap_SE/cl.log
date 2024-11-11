@@ -1,0 +1,12 @@
+	 cp /nv/vol190/zanglab/zw5j/since2019_projects/phase_separation_FEpiTR/f7_TF_condensates_test/f6_revised_TCGA_ATAC_cor_SE/f1_diff_TCGA_ATAC_at_SE_caseID/r4_diff_atac_plot.py .
+	 cp /nv/vol190/zanglab/zw5j/since2019_projects/phase_separation_FEpiTR/f7_TF_condensates_test/f6_revised_TCGA_ATAC_cor_SE/f1_diff_TCGA_ATAC_at_SE_caseID/r2_diff_ATAC_each_CancerType.py .
+	 cp /nv/vol190/zanglab/zw5j/since2019_projects/phase_separation_FEpiTR/f7_TF_condensates_test/f6_revised_TCGA_ATAC_cor_SE/f1_diff_TCGA_ATAC_at_SE_caseID/r3_atac_overlap_SE.py .
+
+	 time python r2_diff_ATAC_each_CancerType.py
+	 time python r3_atac_overlap_SE.py > out3.log
+	 time python r5_ATAC_overlap_TFBS.py > out5.log 
+	 time python r5_ATAC_overlap_TFBS.py > out5.log 
+	 time python r6_combine_data_atac_overlap_TFBS.py 
+	 python r8_ATAC_overlap_TFBS_clustered.py  > out8.log
+	 tail out5.log
+	 python r9_combine_data_atac_overlap_TFBS_clustered.py 

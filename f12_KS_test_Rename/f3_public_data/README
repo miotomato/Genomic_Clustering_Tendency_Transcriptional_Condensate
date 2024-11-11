@@ -1,0 +1,13 @@
+data_processed
+	hic-pro processed Hi-C data
+	hic-pro results to juicer .hic files
+
+f1_hct116_hic_RAD21_auxin
+	DCI of HCT-116 before and after RAD21 degradation
+	comparing C-TFBS and NC-TFBS 
+
+f2_TFBS_CI
+	WT Hi-C chromatin interaction comparing 
+	C-TFBS and NC-TFBS
+
+

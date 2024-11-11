@@ -1,0 +1,5 @@
+Alive group: ids that have long days to last follow up
+Dead group: ids that have short days to death
+
+AoverD: regions that are more open in alive group are ranked high
+DoverA: regions that are more open in Dlive group are ranked high

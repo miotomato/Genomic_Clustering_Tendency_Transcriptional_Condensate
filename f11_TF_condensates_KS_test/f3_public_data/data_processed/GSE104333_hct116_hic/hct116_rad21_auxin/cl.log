@@ -1,0 +1,14 @@
+	 sbatch HiCPro_step1_hct116_rad21_auxin_mboi.sh
+
+	 export PATH="/nv/vol190/zanglab/zw5j/env/anaconda2/bin:$PATH"
+	 export PATH="/nv/vol190/zanglab/zw5j/env/hicpro/installation/HiC-Pro_2.10.0/bin/utils/:$PATH"
+	 # module load R
+	 module load bowtie2
+	 module load samtools
+	 module load gcc/7.1.0  openmpi/3.1.4
+	 module load R/3.5.3
+	 sbatch HiCPro_step2_hct116_rad21_auxin_mboi.sh 
+	 mkdir slurm_step1_out
+	 mv slurm*_*.out slurm_step1_out/
+	 cp /nv/vol190/zanglab/zw5j/work2017/T_ALL_CTCF/updated_201906/f4_HiC_TADs/f0_HiC_process/prostate_HiC_Pro_BglII/prostate_bglii/slurm-5089837.out hicpro_step2_manu_added.sh
+	 sbatch hicpro_step2_manu_added.slurm

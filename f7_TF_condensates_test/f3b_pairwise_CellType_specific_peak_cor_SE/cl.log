@@ -1,0 +1,6 @@
+	 python py3_union_peaks.py  
+	 for ii in f3_union_peaks_across_cellTypes/*.slurm;do sbatch $ii;done
+	 python py3_union_peaks.py  
+	 for ii in f3_union_peaks_across_cellTypes/run_K562_vs_*.slurm;do sbatch $ii;done
+	 python py4_cellType_specific_peaks.py 
+	 python py5_cellType_specific_peaks_cor_SE_over_AllPeaks.py 

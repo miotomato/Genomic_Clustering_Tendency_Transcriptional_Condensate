@@ -1,0 +1,5 @@
+	 sh download.sh 
+	 mkdir download
+	 mv simple_somatic_mutation.open.* download
+	 cp /nv/vol190/zanglab/zw5j/work2017/T_ALL_CTCF/15_TCGA_patient_data/mutation/panCancer_ICGC/data/run2_hg19_to_hg38.sh .
+	 cp /nv/vol190/zanglab/zw5j/work2017/T_ALL_CTCF/15_TCGA_patient_data/mutation/panCancer_ICGC/data/py1_re_format_mutation_bed_hg19.py .

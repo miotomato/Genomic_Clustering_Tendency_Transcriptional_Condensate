@@ -1,0 +1,8 @@
+f1_get_RP_from_bedGraph
+f1_slurms
+	RP from bigwig/bedGraph file for each replicate of each patient sample	
+	
+	
+
+f2_avg_RP_per_sample
+f3_clinical_per_region

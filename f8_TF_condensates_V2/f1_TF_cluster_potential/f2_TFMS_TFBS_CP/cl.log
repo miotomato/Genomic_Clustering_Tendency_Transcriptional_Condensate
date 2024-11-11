@@ -1,0 +1,14 @@
+	 sbatch run1.slurm 
+
+	 python run2_write_slurm.py
+	 for ii in slurm_run2/*.slurm;do sbatch $ii;done 
+	 python run3_write_slurm.py 
+	 for ii in slurm_run3/*.slurm;do sbatch $ii;done
+	 python run4_write_slurm.py 
+	 for ii in slurm_run4/*slurm;do sbatch $ii;done
+
+	 python run2_write_slurm_append.py
+	 python run3_write_slurm_append.py
+	 python run4_write_slurm_append.py
+	 for ii in slurm_run*append/*.slurm;do sbatch $ii;done
+	 python run5_combine_statistics.py 

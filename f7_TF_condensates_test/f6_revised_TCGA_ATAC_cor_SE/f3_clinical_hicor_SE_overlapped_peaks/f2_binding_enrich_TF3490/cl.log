@@ -1,0 +1,2 @@
+	 mkdir f1_region_overlap_udhs
+	 bedtools intersect -a data/BRCA_clinical_hicor_regions.bed -b data/tf_on_UDHS.bed -wa -wb > f1_region_overlap_udhs/clinical_hicor_region_tf_binding.tsv

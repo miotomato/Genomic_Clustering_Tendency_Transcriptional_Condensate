@@ -1,0 +1,6 @@
+1, for each SE, get averaged ATAC-seq signal and combine with clinical data
+
+
+2, rank patients by averaged ATAC-seq signals 
+- at each SE and 
+- across all SEs for survival analysis

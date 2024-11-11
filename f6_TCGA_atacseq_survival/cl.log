@@ -1,0 +1,2 @@
+	 for ii in f2_diffATAC_sig_by_clinical/*bed; do bart2 region -i $ii -s hg38 -c 4 --outdir f3_bart2_region ;done 
+	 python bart_scatter_pvalue.py  -i f3_bart2_region/ -o f4_bart2_figs

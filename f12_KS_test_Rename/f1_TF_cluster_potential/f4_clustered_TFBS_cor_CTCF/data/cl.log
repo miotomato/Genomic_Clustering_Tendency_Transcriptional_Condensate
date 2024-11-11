@@ -1,0 +1,4 @@
+	 cp /nv/vol190/zanglab/zw5j/work2017/T_ALL_CTCF/updated_201906/f2_union_CTCFs/fz_union_combination/py2_union_combination.py py2_get_CBS_data.py
+	 cp /nv/vol190/zanglab/zw5j/since2019_projects/DL_CTCF/f3_bart2_region/data_diff_CTCF/*diff_CTCF.bed .
+	 bedtools intersect -a BRCA_diff_CTCF.bed -b union_CBS_occupancy_GT3_thre_0.3.bed  -wa -u > BRCA_diff_CTCF_specific_thre0.3.bed 
+	 bedtools intersect -a CRC_diff_CTCF.bed -b union_CBS_occupancy_GT3_thre_0.3.bed  -wa -u > CRC_diff_CTCF_specific_thre0.3.bed 

@@ -1,0 +1,2 @@
+	 python write_slurm_run_py1.py 
+	 for ii in run_py1_slurms/*.slurm;do sbatch $ii;done

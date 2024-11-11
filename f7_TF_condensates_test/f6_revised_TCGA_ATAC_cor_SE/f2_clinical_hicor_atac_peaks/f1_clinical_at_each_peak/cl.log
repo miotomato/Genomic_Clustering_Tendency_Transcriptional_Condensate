@@ -1,0 +1,4 @@
+	 sbatch run_r2.slurm 
+	 python r4_rank_region_by_clinical.py 
+	 for ii in f4_rank_region_by_clinical_pvalue/*bed;do bart2 region -i $ii -c 5 -s hg38 --outdir f4b_bart_results;done
+	 python bart_scatter_pvalue.py  -i f4b_bart_results -o f4b_bart_figs

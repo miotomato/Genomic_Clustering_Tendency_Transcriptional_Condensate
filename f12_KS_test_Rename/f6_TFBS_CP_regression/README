@@ -1,0 +1,12 @@
+data
+	expression from cell types w/ >3 TFs w/ ChIP-seq and AICAP
+
+f1_CP_AICAP_expr_correlation
+	collect TFBS CP, TFMS CP, AICAP, SE enrichment, expression data per cell type
+	correlation of TFBS CP vs. others across all cell types
+
+
+f2_CP_cor_AICAP_expr_per_CellType
+	correlation of TFBS CP vs. others per cell type
+
+

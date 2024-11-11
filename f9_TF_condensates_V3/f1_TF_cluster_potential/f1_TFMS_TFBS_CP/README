@@ -1,0 +1,35 @@
+CP_TFMS_vs_random
+CP_TFMS_vs_random_SE_enrichment
+	cluster potential comparing
+	- TFMS and 
+	- same number of randomly selected genomic position (follow exponential distribution)
+	get p-value for each TFMS using exponential distribution as control
+	
+	Then check enrichment at SE for those TFMS with p-value 0.05/0.01
+	- for each SE in 86 cell types, and 
+	- for union SE
+
+
+CP_TFBS_NOT_overlap_motif_vs_TFMS
+CP_TFBS_overlap_motif_vs_TFMS
+CP_TFBS_vs_TFMS
+	cluster potential and enrichment at cell-type matched SEs comparing
+	- TFBS, with or without motif 
+	- same number of randomly selected TFMS (bedtools closest w/ -D ref -fd re-calculated)
+	
+	NOTES:
+	_fig: fig of distribution of sample0
+	_csv_sample: odds ratio at 20-1000 bps, for sample0
+	_csv_cp: t-test and Wilcoxon-rank-sum statistics of all samples
+	
+	
+slurm_run2_append
+	re-run of previous failed jobs, if any
+
+
+test_cp
+	cp few files to check
+	
+	
+archive -- previous results before adding percentile-1/5
+

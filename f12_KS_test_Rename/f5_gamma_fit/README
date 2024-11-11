@@ -1,0 +1,8 @@
+f1_TFMS_gamma_alpha
+	use gamma distribution to fit the intervals of TFMS
+
+f2_gamma_alpha_vs_KS
+	correlation of gamma alpha vs. TFMS CP
+
+f3_TFMS_CP_cor_SE_heatmap
+	enrichment at SE ranked by TFMS CP and gamma alpha

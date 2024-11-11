@@ -1,0 +1,29 @@
+
+f1_TFMS_CP_cor_length_number
+f2_TFMS_CP_cor_SE_heatmap
+	TFMS CP cor motif length/numbers
+	+ TFMS enrichment at SE
+
+
+f3_TFBS_CP_heatmap
+	collect TFBS CP and enrichment at SE
+	heatmap of TFBS CP/SE for
+	- few TFs w/ ChIP-seq data available 
+	- across multiple cell types
+	
+	
+f4_TFBS_CP_cor_TFMS_CP
+f5_per_CT_CP_cor_SE
+f6_per_TF_CP_cor_SE
+	correlation between 
+	- TFMS CP
+	- TFBS CP
+	- TFBS enrichment at SE
+
+
+f7_per_CT_cor_AICAP_sep_by_CP_SE
+f8_per_CT_cor_AICAP_cor_CP
+f8b_per_CT_cor_AICAP_cor_CP
+	- TFBS CP cor AICAP
+	- f8b, + merge all cell types in one fig
+

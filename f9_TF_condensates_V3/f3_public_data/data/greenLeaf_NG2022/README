@@ -1,0 +1,25 @@
+https://www.nature.com/articles/s41588-022-01088-x
+- GSE201336_RAW
+- 41588_2022_1088_MOESM3_ESM.xlsx
+	Supplementary Table 1. Donor metadata including age, sex and race/ethnicity. 
+	Supplementary Table 2. Sample-specific metadata including donor, location, storage method and pathology. 
+	Supplementary Table 3. HTAN Biospecimen IDs for HTAN data used in this study. 
+	Supplementary Table 4. HuBMAP Sample IDs for HuBMAP scATAC data used in this study. 
+	Supplementary Table 5. HuBMAP Sample IDs for HuBMAP snRNA-seq data used in this study.
+- final_cells_included_and_cell_types
+	Files containing the list of cells included after filtering and the corresponding cell types 
+
+
+r1_read_cell_IDs_per_sample.py
+processed_cell_ID_per_sample
+processed_cell_ID_per_sample_per_cellType
+	get the cell barcode info from 
+	- each sample
+	- each sample and each cell type
+
+
+r2_grep_cell_Regions_writeSlurm.py
+processed_cell_Regions_per_sample_per_cellType
+processed_cell_Regions_slurms
+	grep the ATAC-seq read count info from ALL cells from 
+	- each sample and each cell types

@@ -1,0 +1,40 @@
+data
+	SE data
+	
+data_TCGA
+	TCGA ATAC-seq and clinical data
+	for the ATAC-seq count matrix:
+	- mynorm_xx.txt, each column is a individual techinical rep (published data in paper)
+	- mynorm_xx.caseID.avg.txt, each column is a patient w/ averaged signal across all reps
+
+f1_TCGA_ATAC_at_SE_rep
+    use ATAC-seq count matrix for each patient technical rep
+	check the differential TCGA ATAC-seq signals comparing
+	- patient replicates from target cancer type vs.
+	- patient replicates from all other cancer types
+	then compare the differential TCGA ATAC-seq signals at 
+	- SE overlapped ATAC-seq peaks and
+	- SE NOT overlapped ATAC-seq peaks  
+	
+f1b_TCGA_ATAC_at_SE_caseID -- to do 
+	use ATAC-seq count matrix for each patient sample
+	
+f2_TCGA_ATAC_at_SE_cor_survival
+	check the clinical outcomes of patients separated by 
+	- averaged ATAC-seq signals at SEs or 
+	- SE enriched TF ChIP-seq weighted ATAC-seq signals at SEs  
+
+f3_clinical_high_cor_SEs
+	find SEs that are highly associated with clinical results
+	- clinical results by ATAC-seq signal at each SE
+	- clinical results by selected SEs using Glmnet
+	
+	
+f4_TF_at_clinical_high_cor_SEs
+	check the TRs that are enriched at clinical high-cor SEs
+	wait to revise the TCGA BRCA and COAD samples
+	- check the overlap between the ATAC-seq peaks that overlap
+	- cancer specific gained CTCF and SEs
+	
+	
+	

@@ -1,0 +1,22 @@
+f1_bedtools_closest
+	for each TF and for each motif site
+	find the distance to its closest site 
+	
+f2_closest_distribution
+	plot the distribution of distance to closest site
+	random distribute same number of sites in the genome as control
+
+f3_closest_distribution_stats
+	t-test comparing true vs. control 
+	to check if TF has more site close to each other
+
+f4_stats_figs
+	plot the t-statistics from t-test
+	plot the distribution of distance (bp) at which TF has OR>2 than control
+	
+f5_motif_within_300bp
+	keep only those motif has a neighbor <300bp
+	
+f6_bedtools_merge
+	merge all regions allowing a gap of 300bp
+	

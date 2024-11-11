@@ -1,0 +1,11 @@
+data
+f1_TF_cluster_potential
+f2_TCGA_clinical
+f3_public_data
+f4_mutation
+f5_gamma_fit
+f6_TFBS_CP_regression
+f7_motif_entropy
+fz_data_organization
+	organize supp data
+

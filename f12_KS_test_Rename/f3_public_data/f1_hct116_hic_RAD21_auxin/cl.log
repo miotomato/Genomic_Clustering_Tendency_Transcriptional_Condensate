@@ -1,0 +1,2 @@
+	 sbatch r2.slurm 
+	 python r3_DCI_overlap_coBinding_TFBS.py > out_r3.log 

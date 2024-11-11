@@ -1,0 +1,11 @@
+1. get TCGA ATAC peaks/regions that overlapped with merged/all SE
+
+2. for each cancer type in TCGA, get the differential ATAC-seq score comparing
+- patient replicates from corresponding cancer type
+- patient replicates from all other cancers
+ATAC-seq score as t-ststistics
+
+3. for each TCGA cancer type with matched SE data, 
+get the TCGA ATAC peaks that overlap and NOT overlap with SE data
+
+4. plot the figs compare diff atac-seq score

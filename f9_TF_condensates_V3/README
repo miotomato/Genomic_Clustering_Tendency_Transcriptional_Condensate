@@ -1,0 +1,16 @@
+data  
+	SE in hg38
+	TCGA data
+
+
+f1_TF_cluster_potential  
+	identify TFMS CP
+	identifyTFBS CP
+	correlation w/ SE enrichment
+
+
+f2_TCGA_clinical
+	use TCGA ATAC-seq data and expression data to check if 
+	TFs w/ high TFBS CP are more correlated with clinical outcome
+
+	

@@ -1,0 +1,36 @@
+data
+	project_dir=/nv/vol190/zanglab/zw5j/since2019_projects/phase_separation_FEpiTR/
+
+	clinical info &
+	survival analysis for SE overlapped ATAC-seq peaks
+		${project_dir}/f7_TF_condensates_test/f6_revised_TCGA_ATAC_cor_SE/f3_clinical_hicor_SE_overlapped_peaks/f1_clinical_at_each_peak/f2_caseID_each_SE_vs_clinical
+
+	survival analysis for each gene
+		${project_dir}/f7_TF_condensates_test/f6_revised_TCGA_ATAC_cor_SE/f5_clinical_per_gene/f1_clinical_per_gene
+
+	ATAC-seq overlap SE
+		${project_dir}/f7_TF_condensates_test/f6_revised_TCGA_ATAC_cor_SE/f3_clinical_hicor_SE_overlapped_peaks/f1_clinical_at_each_peak/f1_ATAC_overlap_SE_caseID/
+
+	ATAC-seq overlap TFMS and SE &
+	Averaged ATAC-seq signal across all cancer patients &
+	RP at each gene
+		${project_dir}/f8_TF_condensates_V2/f3_clinical_outcome/data 
+
+
+f1_gene_fpkm-uq_clinical_by_TFRP_topCP
+	for TFs with high TFBS CP, do survival analysis, and get
+	% of target genes that are highly correlated with clinical outcome
+	
+	
+f2_clinical_gene_vs_peak_gene
+	for each TF, do survival analysis, and get 
+	% of target genes, vs.
+	% of SE and TFMS overlapped ATAC-seq peaks 
+	that are highly correlated with clinical outcome
+	
+f2_clinical_gene_vs_peak_gene_treatLTcontrol
+	only focus those with treatment-time < control time 
+	when do the survival analysis
+	
+	
+	

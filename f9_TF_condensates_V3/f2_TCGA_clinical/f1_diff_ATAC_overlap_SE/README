@@ -1,0 +1,25 @@
+f2_diff_ATAC_each_CancerType
+f3_diff_ATAC_overlap_SE
+f4_diff_atac_figs
+	diff ATAC compring
+	- All atac-seq peaks
+	- SE overlapped atac-seq peaks
+	
+f5_diff_ATAC_overlap_TFBS
+f6_diff_ATAC_overlap_TFBS_data
+f7_diff_ATAC_overlap_TFBS_plot
+	diff ATAC compring
+	- All atac-seq peaks
+	- TFBS overlapped atac-seq peaks
+
+
+f8_diff_ATAC_overlap_TFBS_clustered
+	atac-seq signal overlapped with 
+	- control, non-clustered TFBS
+	- clustered TFBS, and 
+	- cluster-extended TFBS
+	
+f9_diff_ATAC_overlap_TFBS_clustered_data
+	check if each of the ATAC-seq peak/region overlapped with
+	- the clustered, non-clustered TFBS
+	- the SE 

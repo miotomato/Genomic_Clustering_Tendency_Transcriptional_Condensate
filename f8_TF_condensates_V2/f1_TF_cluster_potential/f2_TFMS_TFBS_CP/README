@@ -1,0 +1,24 @@
+CP_TFMS_vs_random
+	cluster potential comparing
+	- TFMS and 
+	- same number of randomly selected genomic position
+
+
+CP_TFBS_vs_TFMS
+CP_TFBS_with_motif_vs_TFMS
+CP_TFBS_without_motif_vs_TFMS
+	cluster potential and enrichment at cell-type matched SEs comparing
+	- TFBS, with or without motif 
+	- same number of randomly selected TFMS
+	
+	NOTES:
+	_fig: fig of distribution of sample0
+	_csv: odds ratio at 20-1000 bps, for sample0
+	_csv_cp: t-statistics of all samples
+	
+	
+	
+slurm_run2_append
+slurm_run3_append
+slurm_run4_append
+	re-run of previous failed jobs

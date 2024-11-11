@@ -1,0 +1,4 @@
+	 python run1_coBinding_to_gained_sampled_CBS.py > out1.log 
+	 python run2_gained_sampled_CBS_to_coBinding.py > out2.log 
+	 python run3_gained_CBS_to_CoBinding_sampled_UDHS.py > out3.log
+	 python run4_coBinding_sampled_UDHS_to_gained_CBS.py > out4.log

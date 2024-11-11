@@ -1,0 +1,46 @@
+
+==
+f0_bedtools_closest  
+==
+get the closest neighbor (down-stream only) for CP analysis for 
+- all TF motifs
+- all ChIP-seq peaks 
+- all motif overlapped peaks
+- all motif non-overlapped peaks
+the closest neighbor is re-calculated when use TFBS vs. randomly selected TFMS as control
+
+
+==
+f1_TFMS_TFBS_CP
+==
+CP of TFMS vs randomly generated regions as control, which follow the exponential distribution 
+
+CP of TFBS, using TFMS as control
+- to check if TF CP changed compared to TFMS
+- and how is this correlated with enrichment at SE
+
+
+==
+f2_cor_CP_SE_AICAP
+==
+Correlation among
+- TF cluster potential
+- TF enrichment at SEs
+- TF protein AICAP score
+
+
+==
+f3_clustered_TFBS
+==
+merge all TFBS with closest neighbor < percentile-1 in randomly selected TFMS
+check co-occurrence of union binding of TFs with 
+- high TFBS CP and 
+- high z-scored TFBS CP 
+
+
+
+
+**** _V2_PeaksGT2k
+repeat all analysis using all data with #peaks >2k, foldChange10 peaks>500
+
+

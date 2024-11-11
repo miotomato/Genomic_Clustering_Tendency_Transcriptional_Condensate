@@ -1,0 +1,15 @@
+data_TFMS_jarspar
+	bedtools closest (downstream only) for all sequence motif files under
+	/nv/vol190/zanglab/shared/Motif/sites/hg38_fimo_jarspar/results/
+
+
+data_TFBS
+	bedtools closest for ALL ChIP-seq peak files under
+	/nv/vol190/zanglab/zw5j/data/cistrome/cistrome_db_2019_new/human_factor/
+
+
+data_TFBS_overlap_motif
+data_TFBS_NOT_overlap_motif
+	bedtools closest for ChIP-seq peak files with matched MOTIF and SE data under
+	../../data/peaks_overlap_motif
+	../../data/peaks_NOT_overlap_motif

@@ -1,0 +1,24 @@
+cistrome
+	get all high-quality ChIP-seq data
+
+
+public
+	AICAP
+	RBP: https://www.nature.com/articles/s41576-020-00302-y
+	
+	
+
+SE_hg38
+	name revised
+
+
+TCGA
+	ATAC-seq data
+	survival data 
+	RNA-seq data
+
+overlap_test
+	check overlap of union SE with motif
+
+
+

@@ -1,0 +1,4 @@
+	 cp -r /nv/vol190/zanglab/zw5j/since2019_projects/phase_separation_FEpiTR/f7_TF_condensates_test/f1_TF_motif_cluster_cor_SE/f4_cluster_enrichment_at_SE/data/SE_hg38 .
+	 module load gcc/9.2.0
+	 module load bedtools/2.29.2
+	 sbatch run_py1.slurm 

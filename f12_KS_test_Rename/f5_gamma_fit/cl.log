@@ -1,0 +1,2 @@
+	 python r2_gamma_alpha_vs_ks_score.py 
+	 cp //nv/vol190/zanglab/zw5j/since2019_projects/phase_separation_FEpiTR/f12_KS_test_Rename/f1_TF_cluster_potential/f2_cor_CP_SE_AICAP/run2_TFMS_CP_cor_SE_heatmap.py r3_tfms_cp_cor_SE_heatmap.py

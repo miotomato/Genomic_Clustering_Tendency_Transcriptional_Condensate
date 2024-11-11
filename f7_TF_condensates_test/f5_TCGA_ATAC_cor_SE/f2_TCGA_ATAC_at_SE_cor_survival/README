@@ -1,0 +1,6 @@
+1. for each TCGA cancer type with matched SE data, 
+get the TCGA ATAC peaks that overlap with SE data
+
+2,3,
+rank patients by average ATAC-seq signal and check survival differences
+

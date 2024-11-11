@@ -1,0 +1,6 @@
+	 cp ../../../f11_TF_condensates_KS_test/f2_TCGA_clinical/f4_RP_from_bigwig/*.py .
+	 cp ../../../f11_TF_condensates_KS_test/f2_TCGA_clinical/f4_RP_from_bigwig/run2.slurm .
+	 python r1_write_slurm.py 
+	 for ii in f1_slurms/*.slurm;do sbatch $ii;done
+	 sbatch run2.slurm
+	 python r3_avg_PR_across_patient.py 

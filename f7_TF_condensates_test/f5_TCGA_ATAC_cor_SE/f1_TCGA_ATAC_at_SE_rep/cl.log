@@ -1,0 +1,5 @@
+sh r1_all_SE_overlapped_atac.slurm
+head -n 5000 mynorm_TCGA-ATAC_PanCan_all_SE_overlapped.bed > mynorm_TCGA-ATAC_PanCan_all_SE_overlapped.head5k.bed
+time python r2_diff_ATAC_each_CancerType.py
+
+python r3_atac_overlap_SE.py > out3.log

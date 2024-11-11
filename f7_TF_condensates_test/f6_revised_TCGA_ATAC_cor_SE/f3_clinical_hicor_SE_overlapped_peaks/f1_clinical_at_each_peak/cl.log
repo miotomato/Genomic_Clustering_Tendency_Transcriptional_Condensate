@@ -1,0 +1,10 @@
+	 time python r1_atac_overlap_SE_caseID.py  > out_r1.log
+	 sbatch run_r2.slurm 
+	 
+	 python r3_get_highcor_SEs.py 
+	 for ii in f3_clinical_hicor_atac_regions//*bed;do bart2 region -i $ii -c 5 -s hg38 --outdir f3b_bart_results;done
+	 python bart_scatter_pvalue.py  -i f3b_bart_results -o f3b_bart_figs 
+	 
+	 pyhton r4_rank_SE_by_clinical.py 
+	 for ii in f4_rank_SE_by_clinical_pvalue/*bed;do bart2 region -i $ii -c 5 -s hg38 --outdir f4b_bart_results;done
+	 python bart_scatter_pvalue.py  -i f4b_bart_results -o f4b_bart_figs 

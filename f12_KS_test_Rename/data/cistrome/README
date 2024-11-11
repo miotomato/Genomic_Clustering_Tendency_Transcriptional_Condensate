@@ -1,0 +1,8 @@
+for all ChIP-seq profiles with motif, not limited to with SE
+check if the TFBS has motif for CP analysis
+
+manually remove few datasets in peaks_all, those have "space" in cell type names
+check cl.log
+
+
+  

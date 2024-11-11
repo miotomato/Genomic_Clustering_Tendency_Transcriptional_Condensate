@@ -1,0 +1,29 @@
+data  
+	Cistrome peak files
+	SE in hg38
+	TCGA data
+	
+
+f1_TF_cluster_potential  
+	identify TFMS CP
+	identifyTFBS CP
+	correlation w/ SE enrichment
+	correlation w/ AICAP score
+
+
+f2_TCGA_clinical
+	use TCGA ATAC-seq data and expression data to check if 
+	TFs w/ high TFBS CP are more correlated with clinical outcome
+
+
+f3_public_data
+	use public data to validate the funcitonality of TFs with high TFBS CP
+
+	
+f4_mutation
+	mutation rate at TFBS motifs
+	
+	
+
+**** _V2_PeaksGT2k
+repeat all analysis using all data with #peaks >2k, foldChange10 peaks>500

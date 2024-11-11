@@ -1,0 +1,18 @@
+	 cp /nv/vol190/zanglab/zw5j/work2017/T_ALL_CTCF/updated_201906/f3_cancer_specific_CTCFs/f3_cancer_specific_gained_lost/f1_cancer_specific_binding/BRCA_gained.bed .
+	 cp /nv/vol190/zanglab/zw5j/work2017/T_ALL_CTCF/updated_201906/f3_cancer_specific_CTCFs/f3_cancer_specific_gained_lost/f1_cancer_specific_binding/CRC_gained.bed .
+	 cp ../../data/union_CBS_occupancy_GT3.bed .
+	 cp /nv/vol190/zanglab/zw5j/since2019_projects/phase_separation_FEpiTR/f12_KS_test_Rename/f1_TF_cluster_potential/f3_clustered_TFBS/f5_atac_overlap_coBinding_TFBS/HCT-116_top_zscored_TFBSCP/percentile_T_HCT-116_JUND-CEBPB-SRF.bed .
+	 cp /nv/vol190/zanglab/zw5j/since2019_projects/phase_separation_FEpiTR/f12_KS_test_Rename/f1_TF_cluster_potential/f3_clustered_TFBS/f5_atac_overlap_coBinding_TFBS/MCF-7_top_zscored_TFBSCP/percentile_T_MCF-7_ERG-KLF9-KLF4.bed .
+	 cp /nv/vol190/zanglab/zw5j/data/unionDHS/hg38_unionDHS_fc4_50merge.bed .
+	 mv percentile_T_HCT-116_JUND-CEBPB-SRF.bed percentile_T_HCT-116_coBinding.bed
+	 mv percentile_T_MCF-7_ERG-KLF9-KLF4.bed percentile_T_MCF-7_coBinding.bed
+	 mv BRCA_gained.bed MCF-7_gained.bed
+	 mv CRC_gained.bed HCT-116_gained.bed
+	 rename HCT-116 COAD *
+	 rename MCF-7 BRCA *
+	 for ii in *.bed ;do bedtools sort -i $ii > $(basename $ii .bed).sort.bed ;done
+	 cp /nv/vol190/zanglab/zw5j/since2019_projects/phase_separation_FEpiTR/f12_KS_test_Rename/f1_TF_cluster_potential/f3_clustered_TFBS/f5_atac_overlap_coBinding_TFBS/HCT-116_top_zscored_TFBSCP/percentile_T_HCT-116_Union.bed .
+	 cp /nv/vol190/zanglab/zw5j/since2019_projects/phase_separation_FEpiTR/f12_KS_test_Rename/f1_TF_cluster_potential/f3_clustered_TFBS/f5_atac_overlap_coBinding_TFBS/MCF-7_top_zscored_TFBSCP/percentile_T_MCF-7_Union.bed .
+	 for ii in *Union.bed ;do bedtools sort -i $ii > $(basename $ii .bed).sort.bed ;done
+	 rename HCT-116 COAD *
+	 rename MCF-7 BRCA *

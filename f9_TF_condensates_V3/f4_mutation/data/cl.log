@@ -1,0 +1,1 @@
+	 cat pancancer_mutation.bed |cut -f5 |awk '{s+=$1} END {print s}'

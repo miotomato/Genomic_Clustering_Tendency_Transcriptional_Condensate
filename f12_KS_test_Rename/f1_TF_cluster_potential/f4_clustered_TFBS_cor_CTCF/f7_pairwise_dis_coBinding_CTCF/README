@@ -1,0 +1,29 @@
+check the distance between 
+- TFBS (including coBinding and union binding) vs. 
+- gained CBS	
+
+
+run1_coBinding_to_gained_sampled_CBS.py
+	coBinding/union binding to 
+	- gained CBS
+	- sampled CBS
+	
+	
+run2_gained_sampled_CBS_to_coBinding.py
+	- gained CBS
+	- sampled CBS
+	to coBinding/union binding
+	
+	
+run3_gained_CBS_to_CoBinding_sampled_UDHS.py
+	gained CBS to 
+	- coBinding/union binding 
+	- sampled UDHS 
+	
+	
+run4_coBinding_sampled_UDHS_to_gained_CBS.py	
+	- coBinding/union binding
+	- sampled UDHS 
+	to gained CBS
+	
+

@@ -1,0 +1,29 @@
+f1_diff_ATAC
+	differential ATAC-seq score comparing each cancer type vs. others
+	compr. diff. ATAC-seq score between
+	- clustered TFBS
+	- non-clustered TFBS
+
+
+f2_RP_from_bigwig
+	RP using ATAC-seq bigwig file, focusing on regions
+	compr. RP between 
+	- clustered TFBS
+	- non-clustered TFBS
+
+
+f4_ATAC_RP_targets_clinical 
+	get target gene of each factor (RP>1 from SE/TFMS overlapped peaks)
+	check clinical outcome of target genes
+
+	TF target genes: genes with RP>1 using ATAC-seq peaks overlapped with SE and TFMS
+	CoTarget ≥ x: target genes for at least x factors.
+	Univariate survival analysis of each gene using 
+	- FPKM-uq ( [RMg * 10^9 ] / [RM75 * L]) from TCGA.
+	- RP from SE overlaped ATAC-seq
+
+
+fz_combi_figs
+	combine data of ATAC-seq RP, differential RP, SE enrichment and DCI
+
+

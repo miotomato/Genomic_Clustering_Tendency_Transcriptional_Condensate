@@ -1,0 +1,28 @@
+
+Super-Enhancers in the Control of Cell Identity and Disease
+https://doi.org/10.1016/j.cell.2013.09.053
+
+All analyses were performed using RefSeq (GRCh37/hg19) human gene annotations or
+RefSeq (NCBI37/mm9) mouse gene annotations
+
+Table S2. Catalog of Super-Enhancers, Typical Enhancers, and Associated Genes in
+86 Human Samples, Related to Figures 3, 4, and 6. The tables containing the
+super-enhancers and super-enhancer-associated genes are found in Data 1. The
+catalog highlights the cell and tissue types. Representative data sets (Rep.
+Dataset) were used in Figures 3A, 3B, 3C, S3B, and S3C. Data sets used for SNP
+analyses were included for Figures 4B, 5, and S4C. Cancer ID identifies the
+samples included on Figures 6A and S5. Additional column indicates whether the
+sample was used for analyses on Figures 6B–6E. CML stands for chronic
+myelogenous leukemia.
+
+
+Data S1. Super-Enhancers, Typical Enhancers, and Their Associated Genes in 86
+Human Cell and Tissue Samples, Related to Figures 3, 4, 5, 6, S3, S4, and S5.
+Zip file containing 86 files, each containing stitched enhancers, associated
+genes, and ChIP-seq signal. Columns are: enhancer ID, chromosome, start, end,
+associated gene, enhancer rank, is enhancer a super-enhancer (1:yes, 0:no),
+H3K27ac ChIP-seq density (rpm/bp), read density in corresponding input sample
+(rpm/bp).
+
+
+

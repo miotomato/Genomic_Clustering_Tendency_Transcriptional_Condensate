@@ -1,0 +1,2 @@
+	 cp /nv/vol190/zanglab/zw5j/since2019_projects/phase_separation_FEpiTR/f11_TF_condensates_KS_test/f2_TCGA_clinical/f2_ATAC_RP_targets_clinical/r1_gene_fpkm-uq_clinical_by_TFRP_topCP.py .
+	 cp /nv/vol190/zanglab/zw5j/since2019_projects/phase_separation_FEpiTR/f7_TF_condensates_test/f6_revised_TCGA_ATAC_cor_SE/f5_clinical_per_gene/r1_clinical_per_gene.py r2_clinical_per_gene_by_RP.py

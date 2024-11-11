@@ -1,0 +1,3 @@
+	 python run3_coBinding_CTCF_specificity.py > out3.sh
+	 sh out3.sh 
+	 python run5_coBinding_CTCF_gain_potential.py  > out5.log

@@ -1,0 +1,8 @@
+	 rm peaks_all/KB\ Cell_*.bed
+	 rm peaks_all/Detroit\ 562_RELA_8*.bed
+	 rm peaks_all/GM06993\,\ GM11992_TP53_41496.bed 
+	 rm peaks_all/Osteosarcoma\ Cell\ Line\ SJSA_TP53_82549.bed 
+	 rm peaks_all/MV4\;11_CEBPB_84640.bed
+	 rm peaks_all/KATO\ III_*
+	 rm peaks_all/6540\ cells_*
+	 rm peaks_all/D283\ Med_*

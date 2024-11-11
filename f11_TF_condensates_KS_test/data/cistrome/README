@@ -1,0 +1,6 @@
+==
+ChIPseq_peaks  
+==
+get all high quality ChIP-seq data
+get the motif overlapped peaks
+get the motif NON-overlapped peaks

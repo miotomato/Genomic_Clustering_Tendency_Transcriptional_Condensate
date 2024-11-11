@@ -1,0 +1,16 @@
+f1_CTCF_cluster
+	check the distribution of distance to the nearest/closest sites from
+	- ctcf union peaks
+	- ctcf motif
+	
+	
+f2_TF_fimo_jarspar_cluster
+	for each TF and the motif file
+	check the distribution of distance to the nearest/closest sites 
+	with randomly distributed same number of sites as control	
+
+
+f3_TF_seqpos_cistrome_cluster
+	the cistrome data has adjacent motif/sites for all TF
+	not used 
+

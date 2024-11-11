@@ -1,0 +1,20 @@
+data
+	CBS data
+		
+
+f3_coBinding_CTCF_specificity
+f4_coBinding_CTCF_specificity_venn
+	genomic distribution and Venn of shared binding of
+	- clustered TFBS by percentile-5
+	- from Top 3 TFs with largest TFBS CP
+
+
+f5_coBinding_CTCF_gain_potential
+f6_coBinding_CTCF_gain_potential_figs
+	clinical analysis of ATAC-seq peaks overlapped with co-binding sites
+	
+	
+f7_pairwise_dis_coBinding_CTCF
+	pariwise distance of 
+	- coBinding to gained CTCF
+	- gained CTCF to coBinding

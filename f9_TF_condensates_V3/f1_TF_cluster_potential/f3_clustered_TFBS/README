@@ -1,0 +1,15 @@
+f0_TFBS_merge
+	merge all TFBS per factor per celltype
+	
+f1_clustered_TFBS_percentile-5
+	for TFs with high TFBS CP, select TFBS with neighbor < percentile-5 from TFMS
+	and merge those TFBS by percentile-5
+	
+f2_bedfiles_merge
+	merged file from multiple TFs with high TFBS CP
+	from f1*
+	
+f3_cobinding_TFBS_venn
+	genomic annotation and co-binding of merged TFBS with neighbor < percentile-5
+	
+

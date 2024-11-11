@@ -1,0 +1,24 @@
+
+f1_TFMS_CP_cor_length_number
+	How is the CP correlated with motif/peak length/numbers
+
+
+f2_TFBS_CP_cor_TFMS_CP
+f3_sameCT_CP_cor_SE
+f4_sameCT_cor_AICAP_sep_by_CP_SE
+f5_sameTF_CP_cor_SE
+
+	1. Correlation among
+	- TF cluster potential of TFMS and TFBS
+	- TF protein AICAP score
+	- TF enrichment at SEs
+
+    2. for TFs and celltypes with multiple datasets, CP/SE were averaged across all data
+
+
+f2b_TFBS_CP_cor_TFMS_CP
+f3b_sameCT_CP_cor_SE
+f5b_sameTF_CP_cor_SE
+
+	1, for TFs and celltypes with multiple datasets, the data were plotted using the same color 
+	

@@ -1,0 +1,41 @@
+==
+f1_TF_cluster_potential
+==
+cluster potential (CP) of 
+- TF motif sites (TFMS) vs random genomic loci
+- ChIP-seq TF binding sites (TFBS) with motif
+- TFBS without motif
+and enrichment at SE comparing TFBS and TFMS
+
+==
+f2_cor_CP_SE_AICAP
+==
+How is the CP correlated with motif/peak length/numbers
+
+Correlation among
+- TF cluster potential
+- TF protein AICAP score
+- TF enrichment at SEs
+
+
+==
+f3_clinical_outcome
+==
+Clinical outcomes by
+- ATAC-seq signals at cancer-specific TFs
+- ATAC-seq signals at SEs with cancer-specific TFs  
+
+
+
+==
+fz_combined_features
+==
+TF features of 
+- TFMS CP
+- TFBS CP at each cell type
+- enrichment at SE
+- clinical association 
+
+
+
+

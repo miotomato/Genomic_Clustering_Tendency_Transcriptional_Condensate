@@ -1,0 +1,7 @@
+	 bedtools sort -i ../SE_hg38/all_hg38_SE.bed > all_SE.sort.bed
+	 bedtools merge -i all_SE.sort.bed > all_SE.sort.merge.bed 
+	 bedtools intersect -a all_SE.sort.merge.bed -b ../motif_fimo_jaspar/NRF1_MA0506.1.bed -wa -c |awk '{OFS="\t"; print $0,a=$3-$2,1000*$4/a}' > SE_overlap_NRF1.bed
+	 bedtools intersect -a all_SE.sort.merge.bed -b ../motif_fimo_jaspar/E2F4_MA0470.1.bed -wa -c |awk '{OFS="\t"; print $0,a=$3-$2,1000*$4/a}' > SE_overlap_E2F4.bed 
+	 bedtools intersect -a all_SE.sort.merge.bed -b ../motif_fimo_jaspar/CTCFL_MA1102.1.bed -wa -c |awk '{OFS="\t"; print $0,a=$3-$2,1000*$4/a}' > SE_overlap_CTCFL.bed 
+	 bedtools intersect -a all_SE.sort.merge.bed -b ../motif_fimo_jaspar/EGR1_MA0162.3.bed -wa -c |awk '{OFS="\t"; print $0,a=$3-$2,1000*$4/a}' > SE_overlap_EGR1.bed 
+	 bedtools intersect -a all_SE.sort.merge.bed -b ../motif_fimo_jaspar/TFDP1_MA1122.1.bed -wa -c |awk '{OFS="\t"; print $0,a=$3-$2,1000*$4/a}' > SE_overlap_TFDP1.bed 

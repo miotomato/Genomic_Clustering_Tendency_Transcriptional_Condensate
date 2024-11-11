@@ -1,0 +1,7 @@
+test_by_count
+	count if mutation occur at each bp
+
+test_by_Rate
+	count the mutation rate (occurrence across patients) at each bp
+
+

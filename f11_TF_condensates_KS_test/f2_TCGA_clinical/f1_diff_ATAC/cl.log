@@ -1,0 +1,2 @@
+	 python r8_ATAC_overlap_TFBS_clustered.py  > out8.log
+	 time python r9_combine_data_atac_overlap_TFBS_clustered.py 

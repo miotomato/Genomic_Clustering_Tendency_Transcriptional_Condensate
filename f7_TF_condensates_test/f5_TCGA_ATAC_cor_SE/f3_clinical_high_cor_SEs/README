@@ -1,0 +1,7 @@
+f1_clinical_at_each_SE		
+	for each SE, sep patients by ATAC-seq signal and check survival diff.
+
+f2_clinical_at_SE_glmnet
+	use Glmnet to select SEs that are highly associated with clinical results
+	
+	

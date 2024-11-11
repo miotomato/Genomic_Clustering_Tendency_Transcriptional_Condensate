@@ -1,0 +1,5 @@
+	 cp /nv/vol190/zanglab/zw5j/since2019_projects/phase_separation_FEpiTR/f7_TF_condensates_test/f6_revised_TCGA_ATAC_cor_SE/f3_clinical_hicor_SE_overlapped_peaks/f1_clinical_at_each_peak/r1_atac_overlap_SE_caseID.py .
+	 mv r1_atac_overlap_SE_caseID.py r1_atac_overlap_TFBS_caseID.py 
+	 cp ../data_SE_RP/*.py .
+	 rename _overlap_SE_ _overlap_TFBS_ *
+	 cp /nv/vol190/zanglab/zw5j/since2019_projects/phase_separation_FEpiTR/f7_TF_condensates_test/f6_revised_TCGA_ATAC_cor_SE/f3_clinical_hicor_SE_overlapped_peaks/f1_clinical_at_each_peak/find_overlap_keep_info_NOT_sep_strand_revised.py .

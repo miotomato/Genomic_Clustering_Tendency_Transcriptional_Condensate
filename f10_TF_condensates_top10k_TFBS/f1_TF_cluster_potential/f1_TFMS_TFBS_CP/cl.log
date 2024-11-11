@@ -1,0 +1,3 @@
+	 python run2_write_slurm.py
+	 for ii in slurm_run2/*.slurm;do sbatch $ii;done 
+	 python run2b_combine_statistics.py

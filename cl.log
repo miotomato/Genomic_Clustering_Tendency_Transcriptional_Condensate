@@ -1,0 +1,71 @@
+## create a new repo without adding README on github
+
+	 echo "# UTX_code" >> README.md
+	 git init
+	 git add README.md
+	 git branch -M main
+	 git remote add origin https://github.com/zang-lab/Transciptional_condensates.git
+	 git push -u origin main
+	 git remote add origin https://github.com/zhenjiawang157/transciptional_condensates.git
+	 git push -u origin main
+	 ls
+	 git init
+	 git add README.md
+	 git commit -m "copy files"
+	 git branch -M main
+	 git remote add origin https://github.com/zhenjiawang157/transciptional_condensates.git
+	 git push -u origin main
+	 ls
+	 ls -al
+	 ls .git/
+	 rm -rf .git
+	 cat cl.log 
+	 cat README
+	 cat README.md 
+	 echo "# transciptional_condensates" >> README.md
+	 git init
+	 git add README.md
+	 git commit -m "copy files"
+	 git branch -M main
+	 git remote add origin https://github.com/zhenjiawang157/transciptional_condensates.git
+	 git push -u origin main
+	 eval "$(ssh-agent -s)"
+	 ssh-add -k ~/.ssh/id_rsa_git_202008
+	 git add .
+	 git branch -M main
+	 git remote add origin https://github.com/zang-lab/Transciptional_condensates.git
+	 git push -f origin main
+	 git remote -v
+	 git remote set-url origin git@github.com:zhenjiawang157/transciptional_condensates.git
+	 git push -f origin main
+	 ls ~/.ssh/id_rsa_git_202008
+	 cat ~/.ssh/id_rsa_git_202008
+	 cat ~/.ssh/known_hosts 
+	 ssh-keygen -t rsa -b 4096 -C "zhenjia.sdu@gmail.com"
+	 head ~/.ssh/id_rsa_git_2023
+	 touch ~/.ssh/id_rsa_git_2023
+	 ssh-keygen -t rsa -b 4096 -C "zhenjia.sdu@gmail.com"
+	 head "~/.ssh/id_rsa_git_2023
+"
+	 head ~/.ssh/id_rsa_git_2023
+	 touch ~/.ssh/id_rsa_git_2023.git
+	 ssh-keygen -t rsa -b 4096 -C "zhenjia.sdu@gmail.com"
+	 ssh-keygen -t ed25519 -C "zhenjia.sdu@gmail.com"
+	 head /home/zw5j/.ssh/id_ed25519.pub
+	 cat /home/zw5j/.ssh/id_ed25519.pub
+	 ssh-add -k /home/zw5j/.ssh/id_ed25519.pub
+	 fc -ln -50 >> cl.log 
+	 git push -f origin main
+	 eval "$(ssh-agent -s)"
+	 ssh-add -k /home/zw5j/.ssh/id_ed25519.pub
+	 git add .
+	 git commit -m "upload scripts"
+	 git branch -M maingit remote add origin https://github.com/zhenjiawang157/transciptional_condensates
+	 git branch -M main
+	 git remote add origin https://github.com/zhenjiawang157/transciptional_condensates
+	 git push -f origin main
+	 vi ~/.ssh/known_hosts
+	 git remote add origin https://github.com/zhenjiawang157/transciptional_condensates
+	 git push -f origin main
+	 vi /home/zw5j/.ssh/known_hosts
+	 git push -f origin main

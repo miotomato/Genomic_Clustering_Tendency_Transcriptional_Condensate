@@ -1,0 +1,1 @@
+	 cat *.bed |sort -u > all_hg38_SE.bed

@@ -1,0 +1,18 @@
+f1_cellType_Factor_data_Count
+	for each cell type and each TF/HM, check the number of ChIP-seq data in Cistrome DB
+	PeaksFoldChangeAbove10 > 500
+	
+f2_selected_data
+	select the cell type pairs and factor with high-quality data
+	
+
+f3_union_peaks_across_cellTypes
+f4_cellType_specific_peaks
+	For each cell type pair and each factor, keep one ChIP-seq data with most peaks. 
+	Union all peaks and get cell type specific peaks
+
+
+f5_cellType_specific_peaks_cor_SE_over_AllPeaks
+f6_stats_heatmap
+	check the enrichment of cell type specific peaks at SEs
+	with cell type all peaks as bg control

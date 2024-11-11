@@ -1,0 +1,28 @@
+data_SE_RP
+	check SE target and do survival
+	RP of each gene from SE overlapped ATAC-seq 
+	survival analysis per gene by RP
+
+data_TFBS_RP
+	check TFBS target and do survival
+	RP of each gene from TFBS overlapped ATAC-seq 
+	survival analysis per gene by RP
+
+
+f1_clinical_by_TF_RP_targets
+	compare TF target genes (from RP) w/ all genes 
+	check clinical by gene expression
+	
+	
+f2_clinical_per_gene_by_SE_RP
+	survival analysis per gene 
+	using RP from SE overlapped atacseq
+
+f3_TF_targets_clinical_by_gene_RP
+	compare TF target genes (from RP) w/ all genes 
+
+
+f4_clinical_per_gene_by_TFBS_RP
+	survival analysis per gene 
+	using RP from TFBS overlapped atacseq and ALL atacseq
+

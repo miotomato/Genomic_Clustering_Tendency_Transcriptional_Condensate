@@ -1,0 +1,38 @@
+clinical data downloaded from:
+https://portal.gdc.cancer.gov/projects/TCGA-BRCA (BRCA case)
+select Clinical, Cases, download the "Clinical" TSV for all cases
+
+
+identifier and suppl_data downloaded from:
+https://gdc.cancer.gov/about-data/publications/ATACseq-AWG
+— Lookup table for various TCGA sample identifiers. [TXT]
+
+
+mynorm matrix
+Quantile normalization was applied on the log2 scaled raw count matrix (pseudo count = 5). 
+cp /nv/vol190/zanglab/zw5j/work2017/T_ALL_CTCF/15_TCGA_patient_data/ATAC_seq/data/Count_matrices/mynorm_TCGA-ATAC_PanCan_Log2_QuantileNorm_Counts_plus5.txt .
+cat mynorm_TCGA-ATAC_PanCan_Log2_QuantileNorm_Counts_plus5.txt|tail -n +2|cut -f1-3 > tcga_atac.bed 
+
+- mynorm_xx.txt, each column is a individual techinical rep (published data in paper)
+- mynorm_xx.caseID.avg.txt, each column is a patient w/ averaged signal across all reps
+
+
+TCGA-ATAC_clustered_samples.xlsx
+Based on clustering results in TCGA ATAC-seq paper:
+- for BRCA, remove basal, mesothelium and squamous samples,
+- for COAD, remove digestive samples.
+
+
+normalized expression GDC-PANCAN.htseq_fpkm-uq.tsv
+	https://atacseq.xenahubs.net
+	GDC Pan-Cancer (PANCAN) (4 datasets)
+	HTSeq - FPKM-UQ (n=11,768) GDC Hub
+	
+
+Ensemble to geneSymbol
+/Users/zw5j/Dropbox/zw_mac/projects/Zack_projects/BART_Cancer/zack_results/
+20200106_bart_Post_Clustering/Transcriptome_Data/BRCA_1/BRCA_1_DEseq2Results_geneSymbol.csv
+
+
+TCGA mutation data downloaded from ICGC, converted from hg19 to hg38
+	

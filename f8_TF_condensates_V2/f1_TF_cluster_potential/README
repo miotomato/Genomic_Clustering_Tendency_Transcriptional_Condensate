@@ -1,0 +1,28 @@
+
+==
+f1_bedtools_closest  
+==
+get the closest neighbor for CP analysis for 
+- all ChIP-seq peaks 
+- motif overlapped peaks
+- motif non-overlapped peaks
+
+
+==
+f2_TFMS_TFBS_CP
+==
+CP of TFMS, using randomly generated regions as control
+CP of TFBS, using TFMS as control
+- to check if TF CP changed compared to TFMS
+- and how is this correlated with enrichment at SE
+
+determine the clustered TFMS/TFBS?
+
+
+
+
+
+==
+f3_CP_cor_SE
+==
+TFBS CP cor SE enrichment

@@ -1,0 +1,21 @@
+clinical data downloaded from:
+https://portal.gdc.cancer.gov/projects/TCGA-BRCA (BRCA case)
+select Clinical, Cases, download the "Clinical" TSV for all cases
+
+
+identifier downloaded from:
+https://gdc.cancer.gov/about-data/publications/ATACseq-AWG
+— Lookup table for various TCGA sample identifiers. [TXT]
+
+
+mynorm matrix
+Quantile normalization was applied on the log2 scaled raw count matrix (pseudo count = 5). 
+cp /nv/vol190/zanglab/zw5j/work2017/T_ALL_CTCF/15_TCGA_patient_data/ATAC_seq/data/Count_matrices/mynorm_TCGA-ATAC_PanCan_Log2_QuantileNorm_Counts_plus5.txt .
+cat mynorm_TCGA-ATAC_PanCan_Log2_QuantileNorm_Counts_plus5.txt|tail -n +2|cut -f1-3 > tcga_atac.bed 
+
+- mynorm_xx.txt, each column is a individual techinical rep (published data in paper)
+- mynorm_xx.caseID.avg.txt, each column is a patient w/ averaged signal across all reps
+
+
+
+

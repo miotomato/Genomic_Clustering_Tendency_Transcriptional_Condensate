@@ -1,0 +1,9 @@
+	 cp  /nv/vol190/zanglab/zw5j/work2017/T_ALL_CTCF/updated_201906/f2_union_CTCFs/fz_union_combination/f2_union_binding_data/union_binding_occupancy_score_GT3.bed .
+	 cp  /nv/vol190/zanglab/zw5j/work2017/T_ALL_CTCF/updated_201906/f2_union_CTCFs/fz_union_combination/f2_union_binding_data/union_binding_occupancy_score_GT3.csv .
+	 cp /nv/vol190/zanglab/shared/Motif/sites/hg38_fimo_jarspar/results/CTCF_MA0139.1.bed .
+	 cp /nv/vol190/zanglab/zw5j/work2017/T_ALL_CTCF/9_get_CTCF_signals_plus_appended_data/f9_meta_analysis/f3_TF_co-binding/f3_NOTCH_binding/f5_dynamic_NOTCH1_bindings/GSM1252936_dynamic_NOTCH1_peaks_hg38.bed .
+	 cp /nv/vol190/zanglab/shared/Motif/sites/hg38_seqpos_cistrome/cutoff1k/RBPJ_M01112.txt.bed .
+	 cp /nv/vol190/zanglab/shared/Motif/sites/hg38_seqpos_cistrome/cutoff10k/RBPJ_M01112.bed .
+	 cp /nv/vol190/zanglab/zw5j/data/cistrome/cistrome_db_2019/human_factor/392_sort_peaks.narrowPeak.bed .
+
+	 bedtools intersect -a GSM1252936_dynamic_NOTCH1_peaks_hg38.bed  -b RBPJ_MA1116.1.bed  -wa  -u > GSM1252936_dynamic_NOTCH1_peaks_hg38_with_motif.bed 

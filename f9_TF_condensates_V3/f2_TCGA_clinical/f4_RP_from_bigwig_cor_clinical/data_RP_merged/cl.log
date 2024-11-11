@@ -1,0 +1,4 @@
+	 python r1_write_slurm.py 
+	 for ii in f1_slurms/*.slurm;do sbatch $ii;done
+	 sbatch run2.slurm 
+	 python r3_avg_PR_across_patient.py 

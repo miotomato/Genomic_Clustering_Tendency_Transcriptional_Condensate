@@ -1,0 +1,20 @@
+f1_get_RP_from_bedGraph
+f1_slurms
+	RP from bigwig files on C/NC-TFBS
+	
+	
+f2_avg_RP_per_sample
+f3_avg_RP_per_sample_across_patients
+f4_avg_RP_per_sample_across_patients_figs
+	average RP across all patients and compr RP between
+	- C-TFBS
+	- NC-TFBS
+
+
+f5_avg_RP_across_regions
+f6_avg_RP_compr_mutation
+f6b_avg_RP_compr_mutation_figs
+	separate patients by RP across all C-TFBS and compare mutation between
+	- patients w/ high RP
+	- patients w/ low RP
+	

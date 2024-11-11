@@ -1,0 +1,4 @@
+	 cp /nv/vol190/zanglab/zw5j/wwork2018/AML_fran/f11_tf_target_genes/tf_target_gene_RP_clustering/get-regulatory-potential-on-genes_peak_level.py .
+	 cp /nv/vol190/zanglab/zw5j/wwork2018/AML_fran/f11_tf_target_genes/tf_target_gene_RP_clustering/hg38_unique_geneSymbol.ucsc .
+	 python r3_gene_RP_by_ATAC_overlap_SE_overlap_TFMS.py  > out_run3.log
+	 sbatch run5.slurm 

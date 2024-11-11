@@ -1,0 +1,3 @@
+	 cp /nv/vol190/zanglab/zw5j/env/bart3d/bart3d/local_interaction_from_hicpro.py .
+	 sbatch run1_get_CI.slurm
+	 sbatch run2.slurm

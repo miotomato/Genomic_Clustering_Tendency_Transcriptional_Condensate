@@ -1,0 +1,4 @@
+	 cp ../../f11_TF_condensates_KS_test/f4_mutation/*py .
+	 python r5_pancancer_mutation_ByRate_on_Motif_Site_writeSlurm.py
+	 for ii in f5_pancancer_mutation_ByRate_on_Motif_Site_slurm/*.slurm;do sbatch $ii;done
+	 python r6_pancancer_mutation_data_collection.py 

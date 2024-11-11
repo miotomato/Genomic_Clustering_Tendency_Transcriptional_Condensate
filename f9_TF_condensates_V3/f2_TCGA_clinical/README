@@ -1,0 +1,52 @@
+data
+	project_dir=/nv/vol190/zanglab/zw5j/since2019_projects/phase_separation_FEpiTR/
+
+	clinical info &
+	survival analysis for SE overlapped ATAC-seq peaks
+		${project_dir}/f7_TF_condensates_test/f6_revised_TCGA_ATAC_cor_SE/f3_clinical_hicor_SE_overlapped_peaks/f1_clinical_at_each_peak/f2_caseID_each_SE_vs_clinical
+
+	survival analysis for each gene
+		${project_dir}/f7_TF_condensates_test/f6_revised_TCGA_ATAC_cor_SE/f5_clinical_per_gene/f1_clinical_per_gene
+
+	ATAC-seq overlap SE
+		${project_dir}/f7_TF_condensates_test/f6_revised_TCGA_ATAC_cor_SE/f3_clinical_hicor_SE_overlapped_peaks/f1_clinical_at_each_peak/f1_ATAC_overlap_SE_caseID/
+
+	ATAC-seq overlap TFMS and SE &
+	Averaged ATAC-seq signal across all cancer patients &
+	RP at each gene
+		${project_dir}/f8_TF_condensates_V2/f3_clinical_outcome/data 
+
+
+f1_diff_ATAC_overlap_SE  
+	differential ATAC-seq score comparing each cancer type vs. others
+	if ATAC-seq peaks overlapped with cell type matched SE have higher differential score
+
+
+f2_ATAC_RP_clinical 
+	get target gene of each factor (RP>1 from SE/TFMS overlapped peaks)
+	check clinical outcome of target genes
+	
+	
+f3_all_patient_expression_clinical
+	NOTES: USE ALL TCGA patients w/ RNA-seq + clinical data, w/ or w/o ATAC-seq data
+	for selected TFs with 
+	- high TFBS CP and 
+	- higher % of clinical associated target genes
+	check if any correlation between 
+	- expression of target genes, and 
+	- clinical outcome 
+	
+	
+f4_RP_from_ATAC_bigwig_cor_Clinical
+	RP using ATAC-seq bigwig file, focusing on regions
+	- all ATAC-seq peaks, and 
+	- merge of top CP-TFBS with distance < percentile-5 of TFMS
+	- and co-binding of multiple TFBS with high CP
+	
+
+fz_combi_figs				
+	figs of ATAC-seq differential score and RP comparing
+	- clustered TFBS
+	- non-clustered TFBS
+	
+	

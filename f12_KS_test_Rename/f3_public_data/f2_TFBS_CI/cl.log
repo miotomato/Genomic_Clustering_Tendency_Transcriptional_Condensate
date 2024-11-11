@@ -1,0 +1,3 @@
+	 cp ../../../f11_TF_condensates_KS_test/f3_public_data/f2_TFBS_CI/run2* .
+	 cp ../../../f11_TF_condensates_KS_test/f3_public_data/f2_TFBS_CI/run3* .
+	 sbatch run3.slurm 
