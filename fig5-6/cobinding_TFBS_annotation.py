@@ -8,7 +8,7 @@ os.makedirs(outdir, exist_ok=True)
 
 # == Load Selected Factors for Each Cell Type
 selected_factors = {}
-tfbs_cp_dir = '../f2_cor_CP_SE_AICAP/f9_per_CT_TFBS_CP_cor_zscore_CP_with_motif_SE/TFBS_CP/'
+tfbs_cp_dir = 'TFBS_CP'
 
 for ct in ['MCF-7', 'HCT-116']:
     # Load TFBS CP ranking data for each cell type
@@ -53,7 +53,7 @@ for treat_flag in ['percentile_T', 'percentile_T_ExtendMerge']:
             # Step 5: Intersect merged file with annotation files (exons, introns, promoters)
             for prename in ['hg38_exons', 'hg38_introns', 'hg38_4k_promoter_geneID']:
                 afile = mergeFile
-                bfile = f"/standard/vol190/zanglab/zw5j/data/geneID_annotation/hg38/{prename}.bed"
+                bfile = f"data/geneID_annotation/hg38/{prename}.bed"
                 outfile = f"{outdir}/{subdir}/{treat_flag}.merge.{prename}.overlapped.bed"
                 commandLine = f"bedtools intersect -a {afile} -b {bfile} -wa -c > {outfile}"
                 print(commandLine)

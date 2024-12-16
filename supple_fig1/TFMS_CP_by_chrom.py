@@ -23,7 +23,7 @@ HG38_CHROMS = [
 
 # == Load Chromosome Sizes
 chrom_size = pd.read_csv(
-    '/standard/vol190/zanglab/zw5j/data/Genome/ucsc/hg38/hg38.chrom.sizes',
+    'data/Genome/ucsc/hg38/hg38.chrom.sizes',
     sep='\t',
     index_col=0,
     header=None
@@ -36,7 +36,7 @@ os.makedirs(f"{outdir}/_fig", exist_ok=True)
 os.makedirs(f"{outdir}/_csv", exist_ok=True)
 
 # == Process TF Motif Files
-infiles = glob.glob('../f0_bedtools_closest/data_TFMS_jarspar/*')
+infiles = glob.glob('data_TFMS_jarspar/*')
 infiles = [i for i in infiles if not re.search('~', i)]
 infiles.sort()
 

@@ -7,21 +7,18 @@ indir = 'ATAC_overlap_TFBS_per_patient_sig'
 outdir = 'ATAC_overlap_TFBS_per_patient_sig_RP'
 os.makedirs(outdir, exist_ok=True)
 
-# == Project Directory
-project_dir = '/standard/vol190/zanglab/zw5j/since2019_projects/phase_separation_FEpiTR/'
-
 # == Load Filtered TCGA ATAC Clustered Samples
-filtered_file = f"{project_dir}/f7_TF_condensates_test/f6_revised_TCGA_ATAC_cor_SE/data/TCGA/TCGA-ATAC_clustered_samples.xlsx"
+filtered_file = "data/TCGA/TCGA-ATAC_clustered_samples.xlsx"
 filtered_df = pd.read_excel(filtered_file, index_col=0)
 
 # == Read Matched Names Between TCGA ATAC and SE Data
-name_match_file = f"{project_dir}/f8_TF_condensates_V2/f3_clinical_outcome/data/TCGA-ATAC_SE_cancerType_match.xlsx"
+name_match_file = "data/TCGA-ATAC_SE_cancerType_match.xlsx"
 name_match = pd.read_excel(name_match_file, index_col=0)
 name_match = name_match.dropna()
 
 # == Get Top 3 Factors Based on TFBS CP Rank and Z-score
 selected_factors = {}
-tfbs_cp_dir = f"{project_dir}/f15_revision/f1_TF_cluster_potential/f2_cor_CP_SE_AICAP/f9_per_CT_TFBS_CP_cor_zscore_CP_with_motif_SE/TFBS_CP"
+tfbs_cp_dir = "TFBS_CP"
 
 for ct in ['MCF-7', 'HCT-116']:
     df = pd.read_csv(f"{tfbs_cp_dir}/_CP_TFBS_nonBlackList_vs_TFMS_{ct}.csv", index_col=0)

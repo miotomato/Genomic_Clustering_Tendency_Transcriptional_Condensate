@@ -6,11 +6,8 @@ import pandas as pd
 outdir = 'f1_ATAC_overlap_TFBS_caseID'
 os.makedirs(outdir, exist_ok=True)
 
-# == Project directory
-project_dir = '/standard/vol190/zanglab/zw5j/since2019_projects/phase_separation_FEpiTR'
-
 # == Read matched names between TCGA ATAC and SE data
-name_match_file = f"{project_dir}/f7_TF_condensates_test/f6_revised_TCGA_ATAC_cor_SE/data/TCGA/TCGA-ATAC_SE_cancerType_match.xlsx"
+name_match_file = "data/TCGA/TCGA-ATAC_SE_cancerType_match.xlsx"
 name_match = pd.read_excel(name_match_file, index_col=0)
 name_match = name_match.dropna()
 
@@ -18,14 +15,14 @@ name_match = name_match.dropna()
 pyfile = "find_overlap_keep_info_NOT_sep_strand_revised.py"
 
 # == TCGA ATAC-seq normalized counts file
-tcga_file = f"{project_dir}/f7_TF_condensates_test/f6_revised_TCGA_ATAC_cor_SE/data/TCGA/mynorm_TCGA-ATAC_PanCan_Log2_QuantileNorm_Counts_plus5.caseID.avg.txt"
+tcga_file = "data/TCGA/mynorm_TCGA-ATAC_PanCan_Log2_QuantileNorm_Counts_plus5.caseID.avg.txt"
 
 # == Directory containing clustered TFBS data
-c_tfbs_dir = f"{project_dir}/f15_revision/f1_TF_cluster_potential/f3_clustered_TFBS/f5_atac_overlap_coBinding_TFBS"
+c_tfbs_dir = "f5_atac_overlap_coBinding_TFBS"
 
 # == Get top 3 transcription factors (TFs) based on TFBS CP rank and z-score
 selected_factors = {}
-tfbs_cp_dir = f"{project_dir}/f15_revision/f1_TF_cluster_potential/f2_cor_CP_SE_AICAP/f9_per_CT_TFBS_CP_cor_zscore_CP_with_motif_SE/TFBS_CP"
+tfbs_cp_dir = "TFBS_CP"
 
 for ct in ['MCF-7', 'HCT-116']:
     # Read the TFBS CP ranking data

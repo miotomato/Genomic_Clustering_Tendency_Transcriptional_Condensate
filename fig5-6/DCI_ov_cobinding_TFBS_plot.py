@@ -34,12 +34,12 @@ outdir = 'f4_DCI_overlap_coBinding_TFBS_figs'
 os.makedirs(outdir, exist_ok=True)
 
 # == Load Cancer Type and Cell Type Mapping
-name_match_file = '../../../f9_TF_condensates_V3/data/TCGA/TCGA-ATAC_SE_cancerType_match.xlsx'
+name_match_file = 'data/TCGA/TCGA-ATAC_SE_cancerType_match.xlsx'
 name_match = pd.read_excel(name_match_file, index_col=0).dropna()
 
 # == Load Selected Factors for Each Cell Type
 selected_factors = {}
-tfbs_cp_dir = '../../f1_TF_cluster_potential/f2_cor_CP_SE_AICAP/f9_per_CT_TFBS_CP_cor_zscore_CP_with_motif_SE/TFBS_CP/'
+tfbs_cp_dir = 'TFBS_CP'
 
 for ct in ['MCF-7', 'HCT-116']:
     df = pd.read_csv(f"{tfbs_cp_dir}/_CP_TFBS_nonBlackList_vs_TFMS_{ct}.csv", index_col=0)
@@ -47,7 +47,7 @@ for ct in ['MCF-7', 'HCT-116']:
     selected_factors[f"{ct} top_zscored_TFBSCP"] = df['avg rank'].sort_values().iloc[:3].index
 
 # == DCI Data Directory and Parameters
-dci_dir = '../../../f11_TF_condensates_KS_test/f3_public_data/f1_hct116_hic_RAD21_auxin/f1_bart3d/'
+dci_dir = 'f1_bart3d'
 genomicDistances = [100000, 200000, 500000]
 reps = ['rep1', 'rep2', 'all_reps']
 

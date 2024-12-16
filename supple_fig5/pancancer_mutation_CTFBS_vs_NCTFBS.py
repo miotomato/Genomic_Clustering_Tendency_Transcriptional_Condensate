@@ -22,7 +22,7 @@ chroms = ['chr1', 'chr2', 'chr3', 'chr4', 'chr5', 'chr6', 'chr7', 'chr8', 'chr9'
           'chr18', 'chr19', 'chr20', 'chr21', 'chr22', 'chrX', 'chrY']
 
 # Input and output directories
-indir = '../../f12_KS_test_Rename/f4_mutation/f6_pancancer_mutation_data_collection'
+indir = 'f6_pancancer_mutation_data_collection'
 outdir = 'f6b_pancancer_mutation_data_collection_fig'
 os.makedirs(outdir, exist_ok=True)
 
@@ -37,7 +37,7 @@ cts = ['MCF-7', 'HCT-116', 'HeLa', 'LNCaP', 'U87', 'HepG2']
 treat_flags = ['percentile_T', 'percentile_T_ExtendMerge']
 
 # Rank directory for TFBS data
-rank_dir = '../f1_TF_cluster_potential/f2_cor_CP_SE_AICAP/f9_per_CT_TFBS_CP_cor_zscore_CP_with_motif_SE/TFBS_CP/'
+rank_dir = 'TFBS_CP'
 
 # Loop over mutation types, treatment flags, and cell types
 for mutationType in ['Rate', 'Count'][:1]:

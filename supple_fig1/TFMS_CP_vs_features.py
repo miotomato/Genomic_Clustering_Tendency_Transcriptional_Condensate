@@ -63,10 +63,10 @@ os.makedirs(outdir, exist_ok=True)
 os.makedirs('data', exist_ok=True)
 
 # == Load Data
-df1 = pd.read_csv('../f1_TFMS_TFBS_CP/CP_TFMS_vs_random_nonBlackList/data_CP_TFMS_vs_random.csv', index_col=0)
+df1 = pd.read_csv('f1_TFMS_TFBS_CP/CP_TFMS_vs_random_nonBlackList/data_CP_TFMS_vs_random.csv', index_col=0)
 df1 = df1[['#TFMS', 'len-of-TFMS']]
 
-df2 = pd.read_csv('../f1_TFMS_TFBS_CP/CP_TFMS_vs_random_nonBlackList/data_TFMS_enrich_at_SE.csv', index_col=0)
+df2 = pd.read_csv('f1_TFMS_TFBS_CP/CP_TFMS_vs_random_nonBlackList/data_TFMS_enrich_at_SE.csv', index_col=0)
 
 # Merge DataFrames
 df = pd.concat([df1, df2], axis=1, join='inner')

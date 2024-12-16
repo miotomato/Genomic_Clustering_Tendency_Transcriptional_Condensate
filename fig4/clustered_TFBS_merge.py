@@ -39,7 +39,7 @@ for percentile_thre in percentile_thres[:1]:
             dis_thre = df.loc[index, f'TFMS {percentile_thre}'].astype(int)
             
             # Construct the path to the TFBS data file
-            data_file = f'../f0_bedtools_closest/data_TFBS_both_side_nonBlackList/{index}.tsv'
+            data_file = f'data_TFBS_both_side_nonBlackList/{index}.tsv'
             
             # Skip if the file doesn't exist
             if not os.path.isfile(data_file):
@@ -59,7 +59,7 @@ for percentile_thre in percentile_thres[:1]:
             outname = f"{ct}_{tf}_{data_id}"
             
             # Define file paths for the output BED files
-            se_file = f'../../../f12_KS_test_Rename/data/SE_hg38/{ct}.bed'
+            se_file = f'data/SE_hg38/{ct}.bed'
             bed_T_file = f"{outdir}/{ct}/{outname}_T.bed"
             bed_T_SE = f"{outdir}/{ct}/{outname}_T_on_SE.bed"
             bed_C_file = f"{outdir}/{ct}/{outname}_C.bed"

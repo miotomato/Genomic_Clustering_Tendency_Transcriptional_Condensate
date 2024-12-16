@@ -22,7 +22,7 @@ matplotlib.rcParams["font.sans-serif"] = ["Arial"]
 sns.set_style("ticks")
 
 # Define project directory (modify this path according to your project location)
-project_dir = '/standard/vol190/zanglab/zw5j/since2019_projects/phase_separation_FEpiTR/f12_KS_test_Rename'
+project_dir = 'f12_KS_test_Rename'
 
 # Define paths to different datasets
 diff_atac_dir = '{}/f2_TCGA_clinical/f1_diff_ATAC/f9b_diff_ATAC_overlap_TFBS_clustered_data_figs'.format(project_dir)
@@ -31,11 +31,11 @@ hic_dir = '{}/f3_public_data/f2_TFBS_CI/f3_CI_figs'.format(project_dir)
 rank_dir = '../../f1_TF_cluster_potential/f2_cor_CP_SE_AICAP/f9_per_CT_TFBS_CP_cor_zscore_CP_with_motif_SE/TFBS_CP/'
 
 # Load TFBS data
-tfbs_file = '{}/f1_TF_cluster_potential/f3_clustered_TFBS/f2_bedfiles_merged/data_merged_SE_overlapped.csv'.format(project_dir)
+tfbs_file = '{}/data_merged_SE_overlapped.csv'.format(project_dir)
 tfbs_df = pd.read_csv(tfbs_file, index_col=0)
 
 # Load name match data for SE and cancer types
-name_match = pd.read_excel('{}/../f9_TF_condensates_V3/data/TCGA/TCGA-ATAC_SE_cancerType_match.xlsx'.format(project_dir), index_col=0)
+name_match = pd.read_excel('{}/TCGA/TCGA-ATAC_SE_cancerType_match.xlsx'.format(project_dir), index_col=0)
 name_match = name_match.dropna()
 
 # Output directory

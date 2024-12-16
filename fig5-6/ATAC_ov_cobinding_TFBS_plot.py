@@ -74,16 +74,16 @@ outdir = 'f6_atac_overlap_coBinding_TFBS_figs'
 os.makedirs(outdir, exist_ok=True)
 
 # == Data Files
-atac_file = '../../../f9_TF_condensates_V3/data/TCGA/tcga_atac.bed'
-name_match_file = '../../../f9_TF_condensates_V3/data/TCGA/TCGA-ATAC_SE_cancerType_match.xlsx'
-clinical_dir = '../../../f7_TF_condensates_test/f6_revised_TCGA_ATAC_cor_SE/f2_clinical_hicor_atac_peaks/f1_clinical_at_each_peak/f2_caseID_each_peak_vs_clinical/'
+atac_file = 'data/TCGA/tcga_atac.bed'
+name_match_file = 'data/TCGA/TCGA-ATAC_SE_cancerType_match.xlsx'
+clinical_dir = 'f2_caseID_each_peak_vs_clinical/'
 
 # == Load Cancer Type to Cell Type Mapping
 name_match = pd.read_excel(name_match_file, index_col=0).dropna()
 
 # == Load Selected Factors for Each Cell Type
 selected_factors = {}
-tfbs_cp_dir = '../f2_cor_CP_SE_AICAP/f9_per_CT_TFBS_CP_cor_zscore_CP_with_motif_SE/TFBS_CP/'
+tfbs_cp_dir = 'TFBS_CP'
 
 for ct in ['MCF-7', 'HCT-116']:
     df = pd.read_csv(f"{tfbs_cp_dir}/_CP_TFBS_nonBlackList_vs_TFMS_{ct}.csv", index_col=0)

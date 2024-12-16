@@ -51,7 +51,7 @@ os.makedirs(outdir, exist_ok=True)
 # == Load Data
 df1 = pd.read_csv('f1_TFMS_gamma_alpha/TFMS_gamma_alpha.csv', index_col=0)
 df1 = df1[['alpha', 'scale']]
-df2 = pd.read_csv('../f1_TF_cluster_potential/f2_cor_CP_SE_AICAP/data/TFMS_CP_SE_enrich.csv', index_col=0)
+df2 = pd.read_csv('data/TFMS_CP_SE_enrich.csv', index_col=0)
 df = pd.concat([df1, df2], axis=1, join='inner')
 df = df[['#TFMS', 'alpha', 'scale', 'log10-dis ks_2samp-s signed']]
 

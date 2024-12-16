@@ -46,7 +46,7 @@ index_cutoff = 20
 column_cutoff = 7
 
 # SE files for filtering based on cell types
-SE_files = glob.glob('../../../f12_KS_test_Rename/data/SE_hg38/*.bed')
+SE_files = glob.glob('data/SE_hg38/*.bed')
 SEs = [os.path.basename(i).split(".bed")[0] for i in SE_files]
 
 # Input directories
@@ -65,7 +65,7 @@ for profileType in profileTypes:
     os.makedirs(f'{outdir}/_csv', exist_ok=True)
 
     for indir in indirs:
-        infile = f'../f1_TFMS_TFBS_CP/{indir}/per_TF_per_Celltype_{indir}.csv'
+        infile = f'{indir}/per_TF_per_Celltype_{indir}.csv'
         df = pd.read_csv(infile, index_col=0)
         df = df.replace(np.inf, np.nan).dropna()
         

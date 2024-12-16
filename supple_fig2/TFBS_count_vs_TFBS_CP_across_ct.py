@@ -65,7 +65,7 @@ outdir = 'f11_TFBS_CP_cor_peak_nums'
 os.makedirs(outdir, exist_ok=True)
 
 # == Read TFBS CP Data ==
-tfbp_cp_df = pd.read_csv('../f1_TFMS_TFBS_CP/CP_TFBS_nonBlackList_vs_TFMS/per_data_CP_TFBS_nonBlackList_vs_TFMS.csv', index_col=0)
+tfbp_cp_df = pd.read_csv('per_data_CP_TFBS_nonBlackList_vs_TFMS.csv', index_col=0)
 tfbs_dir = 'f3_TFBS_CP_heatmap_with_motif_SE/_csv/'
 
 # Different types of CP comparisons

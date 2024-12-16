@@ -17,13 +17,13 @@ sns.set_style("whitegrid", {'axes.grid': False})
 sns.set_style("ticks")
 
 # == Directories
-indir = '../../f1_TF_cluster_potential/f3_clustered_TFBS/f4_cobinding_TFBS_venn3'
+indir = 'f4_cobinding_TFBS_venn3'
 outdir = 'f3_DCI_overlap_coBinding_TFBS'
 os.makedirs(outdir, exist_ok=True)
 
 # == Load Selected Factors for Each Cell Type
 selected_factors = {}
-tfbs_cp_dir = '../../f1_TF_cluster_potential/f2_cor_CP_SE_AICAP/f9_per_CT_TFBS_CP_cor_zscore_CP_with_motif_SE/TFBS_CP/'
+tfbs_cp_dir = 'TFBS_CP'
 
 for ct in ['MCF-7', 'HCT-116']:
     # Load TFBS CP ranking data for each cell type
@@ -32,7 +32,7 @@ for ct in ['MCF-7', 'HCT-116']:
     selected_factors[f"{ct} top_zscored_TFBSCP"] = df['avg rank'].sort_values().iloc[:3].index
 
 # == DCI Directory and Parameters
-dci_dir = '../../../f11_TF_condensates_KS_test/f3_public_data/f1_hct116_hic_RAD21_auxin/f1_bart3d/'
+dci_dir = 'f1_bart3d'
 genomicDistances = [100000, 200000, 500000]
 reps = ['rep1', 'rep2', 'all_reps']
 

@@ -44,18 +44,18 @@ def main(dcID):
         os.makedirs(f'{outdir}/_csv_cp', exist_ok=True)
 
         # ==== Load cistrome information
-        df_qc = pd.read_csv('../../../f12_KS_test_Rename/data/cistrome/cistrome2019_selected_QC.csv', index_col=0)
+        df_qc = pd.read_csv('data/cistrome/cistrome2019_selected_QC.csv', index_col=0)
         factor = df_qc.loc[dcID].Factor
         celltype = df_qc.loc[dcID].Cell_line
 
         # ==== Define paths to peak, SE, and motif files
-        peak_dir = f'../f0_bedtools_closest/data_{tfbs_type}'
+        peak_dir = f'f0_bedtools_closest/data_{tfbs_type}'
         peak_file = f'{peak_dir}/{celltype}_{factor}_{dcID}.tsv'
 
-        celltype_SE_dir = '../../../f12_KS_test_Rename/data/SE_hg38'
+        celltype_SE_dir = 'data/SE_hg38'
         celltype_SE_file = f'{celltype_SE_dir}/{celltype}.bed'
 
-        motif_dir = "../../data/motif/motif_fimo_jaspar_mid_nonBlackList"
+        motif_dir = "data/motif/motif_fimo_jaspar_mid_nonBlackList"
         motif_files = glob.glob(f'{motif_dir}/{factor}_*')
         motif_files = [i for i in motif_files if not re.search('~', i)]
         assert len(motif_files) == 1, "Error: Multiple or no motif files found."

@@ -23,7 +23,7 @@ sns.set_style("ticks", {'ytick.color': 'k', 'axes.edgecolor': 'k'})
 chroms = ['chr' + str(i) for i in range(1, 23)] + ['chrX', 'chrY']
 
 # == Directories
-indir = '../../f12_KS_test_Rename/f4_mutation/f6_pancancer_mutation_data_collection'
+indir = 'f6_pancancer_mutation_data_collection'
 outdir = 'f6b_pancancer_mutation_data_collection_fig'
 os.makedirs(outdir, exist_ok=True)
 
@@ -40,7 +40,7 @@ cts = ['MCF-7', 'HCT-116', 'HeLa', 'LNCaP', 'U87', 'HepG2']
 treat_flags = ['percentile_T', 'percentile_T_ExtendMerge']
 
 # == Rank Directory
-rank_dir = '../f1_TF_cluster_potential/f2_cor_CP_SE_AICAP/f9_per_CT_TFBS_CP_cor_zscore_CP_with_motif_SE/TFBS_CP/'
+rank_dir = 'TFBS_CP'
 
 # == Loop Over Mutation Types, Treatment Flags, and Cell Types
 for mutationType in ['Rate']:  # Only processing 'Rate'

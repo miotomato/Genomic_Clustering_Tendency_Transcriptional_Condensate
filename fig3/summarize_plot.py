@@ -107,7 +107,7 @@ def return_colors(pal, half_len, a, b):
 # ==== Main script ====
 
 # Read AICAP data
-idrfile = '../../../f12_KS_test_Rename/data/public/13059_2021_2456_MOESM2_ESM.xlsx'
+idrfile = 'data/public/13059_2021_2456_MOESM2_ESM.xlsx'
 idrdf = pd.read_excel(idrfile, sheet_name='condition 2(1,6-HD-2)', index_col=0)
 
 # TFBS info

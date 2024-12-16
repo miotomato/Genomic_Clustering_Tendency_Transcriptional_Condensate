@@ -37,7 +37,7 @@ df = pd.read_csv('data/TFMS_CP_SE_enrich.csv', index_col=0)
 df['TFMSCP'] = df['log10-dis ks_2samp-s signed']
 df.index = [i.split('_')[0] for i in df.index]
 
-expr_df = pd.read_csv('../../../f12_KS_test_Rename/f1_TF_cluster_potential/f2_cor_CP_SE_AICAP/data/TFexpr_var_mean.csv', index_col=0)
+expr_df = pd.read_csv('data/TFexpr_var_mean.csv', index_col=0)
 shared_tf = df.index.intersection(expr_df.index)
 outdf = pd.concat([df[['TFMSCP']].loc[shared_tf], expr_df.loc[shared_tf]], axis=1)
 outdf = outdf.sort_values(by='TFMSCP', ascending=False)

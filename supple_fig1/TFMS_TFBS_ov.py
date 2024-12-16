@@ -7,19 +7,18 @@ import matplotlib.pyplot as plt
 plt.rcParams['font.family'] = 'Arial'
 
 # == Working Directory Paths
-wdir1 = "/Users/vdj6tq/Library/CloudStorage/Dropbox/Projects/Condensate/revision/motif_peak_overlap"
-wdir = "/Users/vdj6tq/Library/CloudStorage/Dropbox/Projects/Condensate/revision/condensate"
+wdir = "motif_peak_overlap"
 
 # == Read Peak Counts into Dictionary
 p_dic = {}
-with open(os.path.join(wdir1, "peak_files_counting.txt"), 'r') as f_peak:
+with open(os.path.join(wdir, "peak_files_counting.txt"), 'r') as f_peak:
     for line in f_peak:
         count, filename = line.split()
         p_dic[filename] = int(count)
 
 # == Read Motif Counts into Dictionary
 m_dic = {}
-with open(os.path.join(wdir1, "motif_files_counting.txt"), 'r') as f_motif:
+with open(os.path.join(wdir, "motif_files_counting.txt"), 'r') as f_motif:
     for line in f_motif:
         count, filename = line.split()
         m_dic[filename] = int(count)
@@ -82,7 +81,7 @@ output_df = pd.DataFrame({
     '% peak ov motif': excel_p_percent
 })
 
-output_path = os.path.join(wdir1, 'TF_motif_peak_overlap_all.csv')
+output_path = os.path.join(wdir, 'TF_motif_peak_overlap_all.csv')
 output_df.to_csv(output_path, index=False)
 print(f"Results saved to: {output_path}")
 
@@ -100,7 +99,7 @@ def moving_average(data, window_size):
 
 # == Plotting Overlap Percentages
 # Read processed data for plotting
-df = pd.read_csv(os.path.join(wdir1, 'TF_motif_peak_overlap_all.csv'))
+df = pd.read_csv(os.path.join(wdir, 'TF_motif_peak_overlap_all.csv'))
 m_percent = df['% motif ov peak'].tolist()
 p_percent = df['% peak ov motif'].tolist()
 
@@ -131,6 +130,6 @@ ax1.legend(lines1 + lines2, labels1 + labels2, loc='upper left', bbox_to_anchor=
 
 # Save the plot
 plt.tight_layout()
-plot_path = os.path.join(wdir1, 'TF_motif_peak_overlap.png')
+plot_path = os.path.join(wdir, 'TF_motif_peak_overlap.png')
 plt.savefig(plot_path, dpi=300)
 print(f"Plot saved to: {plot_path}")

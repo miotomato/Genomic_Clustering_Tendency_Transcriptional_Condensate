@@ -1,4 +1,3 @@
-#!/usr/bin/env python
 import re, os, sys, shutil
 from math import *   
 from string import *
@@ -6,11 +5,9 @@ from optparse import OptionParser
 import operator
 import bisect
 
-
 import BED
 import UCSC
 from GenomeData import *
-#import get_total_tag_counts
 import SeparateByChrom
 import associate_island_with_genes
 import associate_tags_with_regions

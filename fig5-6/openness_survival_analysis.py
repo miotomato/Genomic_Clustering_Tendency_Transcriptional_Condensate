@@ -101,8 +101,8 @@ os.makedirs(outdir, exist_ok=True)
 os.makedirs(f"{outdir}/fig", exist_ok=True)
 
 # Load data mappings
-name_match = pd.read_excel('../../data/TCGA/TCGA-ATAC_SE_cancerType_match.xlsx', index_col=0).dropna()
-filtered_df = pd.read_excel('../../data/TCGA/TCGA-ATAC_clustered_samples.xlsx', index_col=0)
+name_match = pd.read_excel('data/TCGA/TCGA-ATAC_SE_cancerType_match.xlsx', index_col=0).dropna()
+filtered_df = pd.read_excel('data/TCGA/TCGA-ATAC_clustered_samples.xlsx', index_col=0)
 
 # Process each cancer type
 for cancertype in ['BRCA', 'COAD']:
@@ -110,14 +110,14 @@ for cancertype in ['BRCA', 'COAD']:
     filtered_id = filtered_df[filtered_df['cohort'] == cancertype]['case_id']
 
     # Load TCGA peak data
-    sig_file = '../../data/TCGA/mynorm_TCGA-ATAC_PanCan_Log2_QuantileNorm_Counts_plus5.caseID.avg.txt'
+    sig_file = 'data/TCGA/mynorm_TCGA-ATAC_PanCan_Log2_QuantileNorm_Counts_plus5.caseID.avg.txt'
     sig_df = pd.read_csv(sig_file, sep='\t', index_col=3).iloc[:, 6:]
     sig_case_id = [col.split('_')[1] for col in sig_df.columns]
     sig_df.columns = sig_case_id
     sig_case_id = [case for case in sig_case_id if case in filtered_id.values]
 
     # Load clinical data
-    clinical_file = f"../../data/TCGA/clinical.project-TCGA-{cancertype}.2022-03-20.json"
+    clinical_file = f"data/TCGA/clinical.project-TCGA-{cancertype}.2022-03-20.json"
     with open(clinical_file) as clinical_inf:
         clinical_list = json.load(clinical_inf)
 

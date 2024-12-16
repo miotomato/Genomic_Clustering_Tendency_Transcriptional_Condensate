@@ -15,7 +15,7 @@ sns.set_style("ticks")
 matplotlib.rcParams["font.sans-serif"] = ["Arial"]
 
 # Paths
-project_dir = '/standard/vol190/zanglab/zw5j/since2019_projects/phase_separation_FEpiTR/f12_KS_test_Rename'
+project_dir = 'f12_KS_test_Rename'
 diff_atac_dir = f'{project_dir}/f2_TCGA_clinical/f1_diff_ATAC/f9b_diff_ATAC_overlap_TFBS_clustered_data_figs'
 atac_rp_dir = f'{project_dir}/f2_TCGA_clinical/f2_RP_from_bigwig/f4_avg_RP_per_sample_across_patients_figs'
 hic_dir = f'{project_dir}/f3_public_data/f2_TFBS_CI/f3_CI_figs'
@@ -34,7 +34,7 @@ cancertypes = ['BRCA', 'CESC', 'COAD', 'LIHC', 'PRAD']
 treat_flags = ['percentile_T', 'percentile_T_ExtendMerge']
 genomic_dis_kbs = [50]
 
-rank_dir = '../../f1_TF_cluster_potential/f2_cor_CP_SE_AICAP/f9_per_CT_TFBS_CP_cor_zscore_CP_with_motif_SE/TFBS_CP/'
+rank_dir = 'TFBS_CP'
 
 for genomic_dis in genomic_dis_kbs:
     for treat_flag in treat_flags[1:]:

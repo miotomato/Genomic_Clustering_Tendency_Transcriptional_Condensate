@@ -37,15 +37,12 @@ indir = 'f4_clinical_per_gene_by_TFBS_RP'
 outdir = 'f5_TF_targets_clinical_by_gene_TFBS_RP'
 os.makedirs(outdir, exist_ok=True)
 
-# == Project Directory
-project_dir = '/standard/vol190/zanglab/zw5j/since2019_projects/phase_separation_FEpiTR'
-
 # == Load Matched Names Between TCGA ATAC and SE Data
-name_match = pd.read_excel(f"{project_dir}/f8_TF_condensates_V2/f3_clinical_outcome/data/TCGA-ATAC_SE_cancerType_match.xlsx", index_col=0).dropna()
+name_match = pd.read_excel("data/TCGA-ATAC_SE_cancerType_match.xlsx", index_col=0).dropna()
 
 # == Load Top 3 Factors for Each Cell Type
 selected_factors = {}
-tfbs_cp_dir = f"{project_dir}/f15_revision/f1_TF_cluster_potential/f2_cor_CP_SE_AICAP/f9_per_CT_TFBS_CP_cor_zscore_CP_with_motif_SE/TFBS_CP"
+tfbs_cp_dir = "TFBS_CP"
 
 for ct in ['MCF-7', 'HCT-116']:
     df = pd.read_csv(f"{tfbs_cp_dir}/_CP_TFBS_nonBlackList_vs_TFMS_{ct}.csv", index_col=0)

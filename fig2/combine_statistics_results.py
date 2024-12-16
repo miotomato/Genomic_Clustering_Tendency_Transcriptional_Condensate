@@ -39,7 +39,7 @@ indirs = [
 ]
 
 # Load QC data
-df_qc = pd.read_csv('../../../f12_KS_test_Rename/data/cistrome/cistrome2019_selected_QC.csv', index_col=0)
+df_qc = pd.read_csv('data/cistrome/cistrome2019_selected_QC.csv', index_col=0)
 
 print(f'Processing directories: {indirs}')
 

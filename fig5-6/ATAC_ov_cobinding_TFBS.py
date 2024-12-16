@@ -22,11 +22,11 @@ outdir = 'f5_atac_overlap_coBinding_TFBS'
 os.makedirs(outdir, exist_ok=True)
 
 # == Path to ATAC-seq Data File
-atac_file = '../../../f9_TF_condensates_V3/data/TCGA/tcga_atac.bed'
+atac_file = 'data/TCGA/tcga_atac.bed'
 
 # == Load Selected Factors for Each Cell Type
 selected_factors = {}
-tfbs_cp_dir = '../f2_cor_CP_SE_AICAP/f9_per_CT_TFBS_CP_cor_zscore_CP_with_motif_SE/TFBS_CP/'
+tfbs_cp_dir = 'TFBS_CP'
 
 for ct in ['MCF-7', 'HCT-116']:
     df = pd.read_csv(f"{tfbs_cp_dir}/_CP_TFBS_nonBlackList_vs_TFMS_{ct}.csv", index_col=0)
